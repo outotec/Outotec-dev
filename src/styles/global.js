@@ -16,12 +16,37 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${colors.pageBackground};
     font-family: "DIN Offc W02 Regular";
     box-sizing: border-box;
-
-  }
+    font-size: 1rem;
+    line-height: 1.5rem;
+   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'DIN Offc W02 Regular';
+    font-family: 'DINWebPro-Bold W02 Regular';
   }
+
+  h2 {
+    font-size: 2.1875rem;
+    margin-bottom: 2.5rem;
+    color: ${colors.accent1};
+  }
+
+  strong {
+    font-family: "DINWebPro-Bold W02 Regular";
+  }
+
+  li {
+    margin-top: 1rem;
+    
+    &:before {
+      content: '\\2022';
+      color: ${colors.accent1};
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5rem;
+      margin-left: -1.5rem;
+    }
+  }
+
 
   @font-face{
         font-family:"DIN Offc W02 Cond Bold";

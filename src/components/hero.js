@@ -2,17 +2,18 @@ import React from 'react';
 import Container from './container';
 import heroImage from '../images/hero.png';
 import styled from 'styled-components';
-import { Grid } from 'react-flexbox-grid';
 import Button from './button';
 import media from '../styles/media';
 
-const HeroContainer = styled(Grid)`
+const HeroContainer = styled(Container)`
   max-height: 31.375rem;
   display: flex;
   align-items: flex-start;
   height: 43.75rem;
-  background: url('${heroImage}') 50% no-repeat; 
+  background: url('${heroImage}') 50% no-repeat;
+  background-color: #555962;
   background-size: cover;
+  box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
 const HeroText = styled.div`
@@ -38,11 +39,12 @@ const HeroText = styled.div`
     line-height: 1.875rem;
     text-transform: uppercase;
     margin-bottom: 3.5rem;
+    font-family: 'DIN Offc W02 Regular';
   }
 `;
 
-const Hero = ({ siteTitle }) => (
-  <HeroContainer fluid={true}>
+const Hero = () => (
+  <HeroContainer>
     <HeroText>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
       <h2>

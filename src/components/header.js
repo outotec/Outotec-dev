@@ -1,9 +1,10 @@
 // import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Container from './container';
+
 import logo from '../images/Outotec-Logo.svg';
 import styled from 'styled-components';
+import Container from './container';
 
 const LogoImg = styled.img`
   height: 1.5625rem;

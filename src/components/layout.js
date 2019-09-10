@@ -12,12 +12,23 @@ import { GlobalStyles } from '../styles/global';
 import styled from 'styled-components';
 import Header from './header';
 import Container from './container';
-import Hero from './hero';
 import logo from '../images/Outotec-Logo.svg';
 import { Row, Col } from 'react-flexbox-grid';
 import { colors } from '../styles/constants';
+import xPattern from '../images/x-pattern.svg';
 
 const StyledLayout = styled.div``;
+
+const PatternBackground = styled.div`
+  z-index: -1;
+  position: absolute;
+  top:21rem;
+  right: 71rem;
+  width: 100%;
+  height: 33rem;
+  background-image: url('${xPattern}');
+  
+`;
 
 const LogoImg = styled.img`
   height: 1.5625rem;
@@ -57,9 +68,12 @@ const Layout = ({ children }) => {
   return (
     <StyledLayout>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>
-        <Hero />
-      </main>
+      <Container>
+        <div style={{ position: 'relative' }}>
+          <PatternBackground></PatternBackground>
+        </div>
+      </Container>
+      <main>{children}</main>
       <StyledFooter>
         <Container>
           <Row>

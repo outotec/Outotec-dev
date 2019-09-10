@@ -20,7 +20,7 @@ import { colors } from '../styles/constants';
 const StyledLayout = styled.div``;
 
 const LogoImg = styled.img`
-  height: 2rem;
+  height: 1.5625rem;
 `;
 
 const StyledFooter = styled.footer`
@@ -30,13 +30,11 @@ const StyledFooter = styled.footer`
   border-top: 1px solid ${colors.separator};
   h3 {
     color: ${colors.accent1};
-    font-family: 'DIN3';
     font-size: 1rem;
   }
 
   line-height: 1.5rem;
   p {
-    font-family: 'DIN3';
   }
 `;
 

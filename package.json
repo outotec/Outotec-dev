@@ -20,6 +20,7 @@
     "react-dom": "^16.9.0",
     "react-flexbox-grid": "^2.1.2",
     "react-helmet": "^5.2.1",
+    "react-styled-flexboxgrid": "^3.1.0",
     "styled-components": "^4.3.2",
     "styled-reset": "^4.0.0"
   },
@@ -35,6 +36,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
+    "clean": "rm -rf .cache/ && rm -rf public/",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },

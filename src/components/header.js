@@ -6,11 +6,11 @@ import logo from '../images/Outotec-Logo.svg';
 import styled from 'styled-components';
 
 const LogoImg = styled.img`
-  height: 2rem;
+  height: 1.5625rem;
 `;
 
 const StyledHeader = styled.header`
-  height: 5.5rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
 `;

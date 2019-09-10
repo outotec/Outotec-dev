@@ -2,10 +2,12 @@ import React from 'react';
 import Container from './container';
 import heroImage from '../images/hero.png';
 import styled from 'styled-components';
-import { Row, Col } from 'react-flexbox-grid';
+import { Grid } from 'react-flexbox-grid';
+import Button from './button';
+import media from '../styles/media';
 
-const HeroContainer = styled(Container)`
-  height: 5.5rem;
+const HeroContainer = styled(Grid)`
+  max-height: 31.375rem;
   display: flex;
   align-items: flex-start;
   height: 43.75rem;
@@ -14,28 +16,41 @@ const HeroContainer = styled(Container)`
 `;
 
 const HeroText = styled.div`
-  margin-top: 6.5rem;
+  margin-top: 2rem;
+  width: 22rem;
+  max-width: 100%;
+
+  ${Button} {
+    width: 100%;
+  }
+
+  ${media.sm} {
+    margin-top: 6.5rem;
+    margin-left: 2.1rem;
+    ${Button} {
+      width: initial;
+    }
+  }
+
   h2 {
-    font-family: 'DIN1';
     color: #ffffff;
-    font-size: 2.4rem;
+    font-size: 1.625rem;
+    line-height: 1.875rem;
     text-transform: uppercase;
+    margin-bottom: 3.5rem;
   }
 `;
 
 const Hero = ({ siteTitle }) => (
-  <HeroContainer>
-    <Row>
-      <Col xs={5} xsOffset={7}>
-        <HeroText>
-          {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-          <h2>
-            /* Code gigantic equipment for mineral processing plants and develop the sustainability
-            of earth's natural resources */
-          </h2>
-        </HeroText>
-      </Col>
-    </Row>
+  <HeroContainer fluid={true}>
+    <HeroText>
+      {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+      <h2>
+        /* Program skyscraper size equipment for mineral processing plants and help us save the
+        Earth’s natural resources. */
+      </h2>
+      <Button>See positions</Button>
+    </HeroText>
   </HeroContainer>
 );
 

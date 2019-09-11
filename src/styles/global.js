@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { colors } from './constants';
-import reset from 'styled-reset';
+import normalize from 'styled-normalize';
 // import din1 from '../fonts/a1838926-0f17-4822-aac0-be650eb391d5.woff2';
 // import din2 from '../fonts/d0f58e29-2226-42ec-8c80-1f328fa21f9c.woff2';
 // import din3 from '../fonts/759090a0-6416-4c31-a612-39dd398eefed.woff2';
@@ -9,15 +9,18 @@ import reset from 'styled-reset';
 
 export const GlobalStyles = createGlobalStyle`
 
-  ${reset}
+  ${normalize}
 
   body {
     margin: 0;
     background-color: ${colors.pageBackground};
     font-family: "DIN Offc W02 Regular";
-    box-sizing: border-box;
     font-size: 1rem;
     line-height: 1.5rem;
+   }
+
+   a {
+     color: ${colors.accent1};
    }
 
   h1, h2, h3, h4, h5, h6 {
@@ -34,16 +37,29 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "DINWebPro-Bold W02 Regular";
   }
 
-  li {
-    margin-top: 1rem;
-    
-    &:before {
-      content: '\\2022';
-      color: ${colors.accent1};
-      font-weight: bold;
-      display: inline-block;
-      width: 1.5rem;
-      margin-left: -1.5rem;
+  ol {
+    padding-inline-start: 1rem;
+    li {
+      margin-top: 1rem;
+    }
+  }
+
+  ul {
+    padding-inline-start: 0rem;
+    list-style: none;
+    li {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      
+      &:before {
+        content: '\\2022';
+        color: ${colors.accent1};
+        font-weight: bold;
+        font-size: 1.2em;
+        display: inline-block;
+        width: 1.5rem;
+        margin-left: -1.5rem;
+      }
     }
   }
 

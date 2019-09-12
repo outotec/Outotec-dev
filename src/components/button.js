@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../styles/constants';
 
 const StyledButton = styled.button`
-  background: none;
+  background: ${colors.accent1};
   color: white;
   font-size: 1rem;
   font-family: 'DINWebPro-Medium W02 Regular';

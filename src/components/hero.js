@@ -66,8 +66,8 @@ const Hero = () => (
         <HeroText>
           {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
           <h2>
-            /* Program skyscraper size equipment for mineral processing plants and help us save the
-            Earth’s natural resources. */
+            /* Do you want to work with cutting edge technologies, and building things at the
+            forefront of the digital world? */
           </h2>
           <Button>See positions</Button>
         </HeroText>

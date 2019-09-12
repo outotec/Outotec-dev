@@ -51,7 +51,7 @@ const Content = styled.div`
     margin-left: 2rem;
   }
 
-  ${media.md} {
+  ${media.lg} {
     ${props =>
       !props.imageLeft &&
       `
@@ -78,16 +78,10 @@ const Content = styled.div`
   margin-bottom: 2.25rem;
   margin-right: 0;
   margin-left: 1rem;
-
-  h2 {
-    font-size: 1.875rem;
-  }
 `;
 
 const StyledImg = styled.img`
-  ${media.xs} {
-    height: 162px;
-  }
+  height: 162px;
 
   ${media.sm} {
     height: 320px;

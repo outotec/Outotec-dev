@@ -1,10 +1,12 @@
 import React from 'react';
+import { StaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
 import ImageTextSection from '../components/ImageTextSection';
 import earth from '../images/earth.png';
 import namibia from '../images/outotec-dpmt-tsumeb-namibia30.png';
+import ContactForm from '../components/contact-form';
 
 const IndexPage = () => (
   <Layout>
@@ -68,6 +70,30 @@ const IndexPage = () => (
         </p>
       </ol>
     </ImageTextSection>
+    <StaticQuery
+      query={graphql`
+        query {
+          desktop: file(relativePath: { eq: "coffee.png" }) {
+            childImageSharp {
+              fluid(quality: 90, maxWidth: 361) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <ContactForm imageData={data.desktop.childImageSharp.fluid}>
+          {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+          <h2>// Swing by for a visit</h2>
+          <p>
+            If this sounds like something you might be interested in, drop by for a casual chat
+            about tech and design. We don’t have bean bags but we got beer. And coke. We got coffee
+            and tea too. And cookies. No pressure.
+          </p>
+        </ContactForm>
+      )}
+    />
   </Layout>
 );
 

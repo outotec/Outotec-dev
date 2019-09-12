@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { colors } from './constants';
 import normalize from 'styled-normalize';
+import media from './media';
 // import din1 from '../fonts/a1838926-0f17-4822-aac0-be650eb391d5.woff2';
 // import din2 from '../fonts/d0f58e29-2226-42ec-8c80-1f328fa21f9c.woff2';
 // import din3 from '../fonts/759090a0-6416-4c31-a612-39dd398eefed.woff2';
@@ -27,11 +28,20 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'DINWebPro-Bold W02 Regular';
   }
 
+  
   h2 {
-    font-size: 2.1875rem;
-    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
     color: ${colors.accent1};
+    text-transform: uppercase;
+
+    ${media.sm} {
+      font-size: 2.1875rem;
+      line-height: 2.1875rem;
+      margin-bottom: 2.5rem;
+    }
   }
+  
 
   strong {
     font-family: "DINWebPro-Bold W02 Regular";

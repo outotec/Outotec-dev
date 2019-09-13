@@ -26,8 +26,8 @@ const IndexPage = () => (
           You will be working on products, that <strong>shape entire industries</strong>
         </li>
         <li>
-          Laid back culture, where things are done as we see fit for each case, minimising
-          unnecessary bureaucracy{' '}
+          Laid back culture, with autonomy on how things get done and minimizing
+          the corporate rigidity{' '}
         </li>
         <li>
           <strong>Latest tech</strong> and modern practices

@@ -26,7 +26,7 @@ const IndexPage = () => (
           You will be working on products, that <strong>shape entire industries</strong>
         </li>
         <li>
-          Laid back culture, with autonomy on how things get done and minimizing
+          <strong>Laid back culture</strong>, with autonomy on how things get done and minimizing
           the corporate rigidity{' '}
         </li>
         <li>
@@ -43,34 +43,50 @@ const IndexPage = () => (
       <h2>// What you get to build</h2>
 
       <p>
-        We have 3 main solution areas, in each, we have ownership and are developing several
-        products:
+        We have three main solution areas with ownership to develop solutions using the latest
+        technologies to meet end-user needs and business opportunities:
       </p>
       <ol>
         <li>
-          <strong>Intelligent Automation</strong> - Real-time systems and tools that automatically
-          sense, think and control
+          <strong>Intelligent Automation</strong>
+          <p>
+            Real-time systems and tools that automatically sense, think and control
+          </p>
+          <ul>
+            <li>
+              Real-time advanced process control systems using state of the art algorithms such
+              as Model Predictive Control
+            </li>
+            <li>
+              Custom-built sensors and measurement systems using, e.g. machine vision, wireless sensor
+              networks, advanced analytics and machine learning
+            </li>
+          </ul>
         </li>
         <li>
-          <strong>Digital Services</strong> - Connected customers enjoying our services in the
-          physical and digital
+          <strong>Digital Services</strong>
+          <p>
+            Connected customers enjoying our services in the physical and digital
+          </p>
         </li>
         <li>
-          <strong>Modeling and Simulation</strong> - Digitizing our process technology and knowhow
-          with chemistry and metallurgy
+          <strong>Modeling and Simulation</strong>
+          <p>
+            Digitizing our process technology and knowhow with chemistry and metallurgy
+          </p>
         </li>
-        <p>
-          Explore more about Outotec digitalization in{' '}
-          <a href="https://" target="_blank" rel="noopener noreferrer">
-            Refining data - redefining plants
-          </a>{' '}
-          and how digitalization advances sustainability from our{' '}
-          <a href="https://" target="_blank" rel="noopener noreferrer">
-            Sustainability report
-          </a>
-          .
-        </p>
       </ol>
+      <p>
+        Explore more about Outotec digitalization in{' '}
+        <a href="https://" target="_blank" rel="noopener noreferrer">
+          Refining data - redefining plants
+        </a>{' '}
+        and how digitalization advances sustainability from our{' '}
+        <a href="https://" target="_blank" rel="noopener noreferrer">
+          Sustainability report
+        </a>
+        .
+      </p>
     </ImageTextSection>
     <Positions>
       <Position title={'Lead Developer, Espoo'}>

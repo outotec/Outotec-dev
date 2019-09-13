@@ -7,6 +7,8 @@ import ImageTextSection from '../components/ImageTextSection';
 import earth from '../images/earth.png';
 import namibia from '../images/outotec-dpmt-tsumeb-namibia30.png';
 import ContactForm from '../components/contact-form';
+import Positions from '../components/positions';
+import Position from '../components/position';
 
 const IndexPage = () => (
   <Layout>
@@ -70,6 +72,76 @@ const IndexPage = () => (
         </p>
       </ol>
     </ImageTextSection>
+    <Positions>
+      <Position title={'Lead Developer, Espoo'}>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+      </Position>
+      <Position title={'Software Developer, Pori'}>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+      </Position>
+      <Position title={'Senior Software Developer, Espoo'}>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+      </Position>
+      <Position title={'UX Designer, Espoo'}>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+        <p>
+          We are a software development team, building digital solutions for Outotec customers
+          around the globe. In practice, this means enabling sensors in machines, automated plants,
+          and building remote support systems for our maintenance.
+        </p>
+      </Position>
+    </Positions>
     <StaticQuery
       query={graphql`
         query {

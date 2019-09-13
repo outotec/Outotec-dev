@@ -14,7 +14,8 @@ const StyledImageTextSection = styled.div`
 `;
 
 const ContentCol = styled(Col)`
-  background-color: #ffffff;
+  ${props => !props.hideWhiteBg && `background-color: #ffffff;`}
+  
   ${media.md} {
     min-width: 33rem;
   }
@@ -98,10 +99,10 @@ const StyledImg = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: 50% 20%;
-  box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
+  // box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
-const ImageTextSection = ({ imageSrc, children, imageLeft, hideImageInMobile }) => {
+const ImageTextSection = ({ imageSrc, children, imageLeft, hideImageInMobile, hideWhiteBg }) => {
   const image = (
     <ImageCol xs={12} md={8} mdOffset={2} lgOffset={0} hideImageInMobile={hideImageInMobile}>
       <StyledImg src={imageSrc} />
@@ -118,6 +119,7 @@ const ImageTextSection = ({ imageSrc, children, imageLeft, hideImageInMobile }) 
       lgOffset={imageLeft ? 0 : 1}
       xlOffset={imageLeft ? 0 : 2}
       imageLeft={imageLeft}
+      hideWhiteBg={hideWhiteBg}
     >
       <Content imageLeft={imageLeft}>{children}</Content>
     </ContentCol>

@@ -18,10 +18,10 @@ const HeroImage = styled.div`
   align-items: flex-start;
   height: 43.75rem;
   background: url('${heroImage}') 50% no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   background-color: #555962;
   background-size: cover;
-  box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
+  // box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
 const Mask = styled.div`
@@ -35,7 +35,7 @@ const HeroText = styled.div`
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 3rem;
-  max-width: 22rem;
+  max-width: 35rem;
 
   ${Button} {
     width: 100%;
@@ -51,8 +51,7 @@ const HeroText = styled.div`
 
   h2 {
     color: #ffffff;
-    font-size: 1.625rem;
-    line-height: 1.875rem;
+    line-height: 3rem;
     text-transform: uppercase;
     margin-bottom: 3.5rem;
     font-family: 'DIN Offc W02 Regular';
@@ -66,8 +65,8 @@ const Hero = () => (
         <HeroText>
           {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
           <h2>
-            /* Do you want to work with cutting edge technologies, and building things at the
-            forefront of the digital world? */
+            Do you want to work with cutting edge technologies and build things at the
+            forefront of the digital world?
           </h2>
           <Button>See positions</Button>
         </HeroText>

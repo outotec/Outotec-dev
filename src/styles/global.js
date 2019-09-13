@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
    }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'DINWebPro-Bold W02 Regular';
+    font-family: 'DIN Offc W02 Regular'; 
   }
 
   
@@ -41,8 +41,19 @@ export const GlobalStyles = createGlobalStyle`
       margin-bottom: 2.5rem;
     }
   }
-  
 
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: ${colors.accent1};
+
+    ${media.sm} {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  
   strong {
     font-family: "DINWebPro-Bold W02 Regular";
   }

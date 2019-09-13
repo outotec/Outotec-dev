@@ -5,25 +5,77 @@ import SEO from '../components/seo';
 import Hero from '../components/hero';
 import ImageTextSection from '../components/ImageTextSection';
 import earth from '../images/earth.png';
-import namibia from '../images/outotec-dpmt-tsumeb-namibia30.png';
+import team from '../images/team.jpg';
+import scene from '../images/scene.png';
+import jaakko from '../images/jaakko.png';
+import fire from '../images/fire.png';
+import stack from '../images/stack.png';
+import osc from '../images/osc.jpg';
+import techchat from '../images/techchat.png';
 import ContactForm from '../components/contact-form';
 import Positions from '../components/positions';
 import Position from '../components/position';
+import Container from '../components/container';
+import styled from 'styled-components';
+import media from '../styles/media';
+import { Col, Row } from 'react-flexbox-grid';
+import Button from '../components/button';
+
+const ChatContainer = styled(Container)`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 31rem;
+  background: url('${techchat}') 50% no-repeat;
+  background-position: top center;
+  background-color: #555962;
+  background-size: cover;
+  padding-top: 3rem;
+  color: white;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  padding: 3rem;
+  ${media.sm} {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding: 8rem 12rem;
+  } 
+  text-align: center;
+`;
+
+const Banner = styled(Container)`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 25rem;
+  background: url('${scene}') 50% no-repeat;
+  background-position: top center;
+  background-color: #555962;
+  background-size: cover;
+  padding-top: 3rem;
+`;
+
+const BannerCol = styled(Col)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+`;
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
-    <ImageTextSection imageSrc={earth}>
+      <ImageTextSection imageSrc={earth}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-      <h2>// We challenge you</h2>
+      <h2>// What we offer you</h2>
       <ul>
         <li>
-          Opportunity to have a <strong>real impact</strong> on making companies use Earth’s natural
+          Opportunity to have a <strong>real impact</strong> by helping our customers use Earth’s natural
           resources in a more <strong>sustainable way</strong>
         </li>
         <li>
-          You will be working on products, that <strong>shape entire industries</strong>
+          Work on products, that <strong>shape entire industries</strong>
         </li>
         <li>
           <strong>Laid back culture</strong>, with autonomy on how things get done and minimizing
@@ -33,61 +85,115 @@ const IndexPage = () => (
           <strong>Latest tech</strong> and modern practices
         </li>
         <li>
-          The opportunity to <strong>build the team</strong>, the culture, and ways of working
+          Opportunity to <strong>build the team</strong>, the culture, and ways of working
           together (for real)
         </li>
       </ul>
     </ImageTextSection>
-    <ImageTextSection imageSrc={namibia} imageLeft={true} hideImageInMobile={true}>
+
+    <ImageTextSection imageSrc={fire} imageLeft={true} hideImageInMobile={true}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-      <h2>// What you get to build</h2>
+      <h2>// What you get to do</h2>
 
       <p>
         We have three main solution areas with ownership to develop solutions using the latest
         technologies to meet end-user needs and business opportunities:
       </p>
+
       <ol>
         <li>
-          <strong>Intelligent Automation</strong>
-          <p>
-            Real-time systems and tools that automatically sense, think and control
-          </p>
-          <ul>
-            <li>
-              Real-time advanced process control systems using state of the art algorithms such
-              as Model Predictive Control
-            </li>
-            <li>
-              Custom-built sensors and measurement systems using, e.g. machine vision, wireless sensor
-              networks, advanced analytics and machine learning
-            </li>
-          </ul>
+          <strong>Intelligent Automation</strong> - Real-time systems and tools that automatically sense, think and control
         </li>
         <li>
-          <strong>Digital Services</strong>
-          <p>
-            Connected customers enjoying our services in the physical and digital
-          </p>
+          <strong>Digital Services</strong> - Connected customers enjoying our services in the physical and digital
         </li>
         <li>
-          <strong>Modeling and Simulation</strong>
-          <p>
-            Digitizing our process technology and knowhow with chemistry and metallurgy
-          </p>
+          <strong>Modeling and Simulation</strong> - Digitizing our process technology and knowhow with chemistry and metallurgy
         </li>
       </ol>
       <p>
-        Explore more about Outotec digitalization in{' '}
-        <a href="https://" target="_blank" rel="noopener noreferrer">
-          Refining data - redefining plants
+        Join us to{' '}
+        <a href="https://www.outotec.com/explore/digitalization/" target="_blank" rel="noopener noreferrer">
+          refine data to redefine our industry
         </a>{' '}
-        and how digitalization advances sustainability from our{' '}
-        <a href="https://" target="_blank" rel="noopener noreferrer">
-          Sustainability report
+        and advance sustainability with{' '}
+        <a href="https://www.outotec.com/sustainability-report/2017/our-agenda/refining-data-for-sustainability/" target="_blank" rel="noopener noreferrer">
+          digitalization
         </a>
         .
       </p>
     </ImageTextSection>
+
+    <ChatContainer>
+      <p>
+        Would you like to chat about tech or design over a cup of coffee?
+      </p>
+      <Button>Sure thing!</Button>
+    </ChatContainer>
+
+    <ImageTextSection imageSrc={jaakko} hideWhiteBg={true} >
+      {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+      <h4>“I love the challenges and flexibility in my role. We've succeeded in developing a machine
+        vision system that’s been tried for 30 years.”
+      </h4>
+      <p>
+        Jaakko Palokangas
+        <br />
+        Team lead, Intelligent Automation
+      </p>
+    </ImageTextSection>
+
+    <Banner>
+        <Row>
+          <h2>No fluff, real impact</h2>
+        </Row>
+        <Row>
+          <BannerCol>
+            <h4>6.2 million tonnes</h4>
+            <p>CO2 emissions avoided</p>
+          </BannerCol>
+          <BannerCol>
+            <h4>90% green products</h4>
+            <p>Of our order intake</p>
+          </BannerCol>
+          <BannerCol>
+            <h4>12th most sustainable</h4>
+            <p>Company in the world</p>
+          </BannerCol>
+        </Row>
+    </Banner>
+
+    <ImageTextSection imageSrc={team} >
+      {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+      <h2>// Your team</h2>
+      <p>
+        We are a software development team, building digital solutions for Outotec customers around
+        the globe. We create advanced sensors for our machines, automate and simulate our processes,
+        connect them all to the cloud to enable analytics, machine learning and digital twin
+        solutions.
+      </p>
+      <p>
+        Bit by bit, we bring modern software and design practices to a relatively conservative industry,
+        where our people have a real impact.
+      </p>
+    </ImageTextSection>
+
+    <ImageTextSection imageSrc={stack} imageLeft={true} hideWhiteBg={true}>
+      {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+      <h2>// Your tech & design stack</h2>
+      <p>
+        For all things web & cloud, we use Azure cloud services, build backends and API's with C# and Node.js,
+        fronts with TypeScript and React. Execution-critical systems, desktop tools and sensor solutions we
+        develop on .NET with a modular architecture and queue-based interfaces. Throw in a bit of ML magic
+        with Python and we're done! 
+      </p>
+      <p>
+        We don’t expect you to know everything. Having a passion for learning and improving is the key. We
+        support learning by giving you the time and resources to go to conferences and take courses to develop
+        as a professional.
+      </p>
+    </ImageTextSection>
+
     <Positions>
       <Position title={'Lead Developer, Espoo'}>
         <p>
@@ -158,6 +264,7 @@ const IndexPage = () => (
         </p>
       </Position>
     </Positions>
+
     <StaticQuery
       query={graphql`
         query {

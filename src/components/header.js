@@ -11,7 +11,7 @@ const LogoImg = styled.img`
 `;
 
 const StyledHeader = styled.header`
-  height: 3.75rem;
+  height: 5.75rem;
   display: flex;
   align-items: center;
 `;

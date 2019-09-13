@@ -12,7 +12,7 @@ const StyledImage = styled(BackgroundImage)`
 
 const PositionContainer = styled(Container)`
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 `;
 
 class Positions extends React.Component {

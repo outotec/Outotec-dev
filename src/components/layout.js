@@ -84,17 +84,17 @@ const Layout = ({ children }) => {
               {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
               <h3>// Talk to a real human</h3>
               <p>
-                Mikko Tikkanen
-                <br />+ 358 44 687 3476
+                Jussi Järvinen
+                <br />+ 358 40 831 2762
               </p>
             </StyledCol>
             <StyledCol xs={12} sm={4} md={3}>
               {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
               <h3>// Hang out</h3>
               <p>
-                Rauhalanpuisto 9,
+                Rauhalanpuisto 9
                 <br />
-                02230 Espoo,
+                02230 Espoo
                 <br />
                 Finland
               </p>

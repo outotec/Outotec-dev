@@ -6,7 +6,8 @@ import minus from '../images/minus.svg';
 
 const PositionCol = styled(Col)`
   background-color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
 `;
 
 const Role = styled.div`
@@ -20,6 +21,7 @@ const Role = styled.div`
     font-size: 1rem;
     font-family: 'DINWebPro-Bold W02 Regular';
   }
+  cursor: pointer;
 `;
 const Description = styled.div`
   margin-left: 1.8rem;

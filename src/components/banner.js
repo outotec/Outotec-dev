@@ -11,7 +11,6 @@ export const Banner = styled(Container)`
   min-height: 25rem;
   background: url('${scene}') 50% no-repeat;
   background-position: top center;
-  background-color: #555962;
   background-size: cover;
   padding-top: 3rem;
   padding-bottom: 3rem;

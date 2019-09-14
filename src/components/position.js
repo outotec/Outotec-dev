@@ -7,7 +7,7 @@ import minus from '../images/minus.svg';
 const PositionCol = styled(Col)`
   background-color: white;
   margin-bottom: 1rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 1rem;
 `;
 
 const Role = styled.div`

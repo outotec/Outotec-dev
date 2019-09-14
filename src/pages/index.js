@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
@@ -10,7 +10,6 @@ import scene from '../images/scene.png';
 import jaakko from '../images/jaakko.png';
 import fire from '../images/fire.png';
 import stack from '../images/stack.png';
-import osc from '../images/osc.jpg';
 import techchat from '../images/techchat.png';
 import ContactForm from '../components/contact-form';
 import Positions from '../components/positions';
@@ -66,13 +65,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
-      <ImageTextSection imageSrc={earth}>
+    <ImageTextSection imageSrc={earth}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
       <h2>// What we offer you</h2>
       <ul>
         <li>
-          Opportunity to have a <strong>real impact</strong> by helping our customers use Earth’s natural
-          resources in a more <strong>sustainable way</strong>
+          Opportunity to have a <strong>real impact</strong> by helping our customers use Earth’s
+          natural resources in a more <strong>sustainable way</strong>
         </li>
         <li>
           Work on products, that <strong>shape entire industries</strong>
@@ -85,8 +84,8 @@ const IndexPage = () => (
           <strong>Latest tech</strong> and modern practices
         </li>
         <li>
-          Opportunity to <strong>build the team</strong>, the culture, and ways of working
-          together (for real)
+          Opportunity to <strong>build the team</strong>, the culture, and ways of working together
+          (for real)
         </li>
       </ul>
     </ImageTextSection>
@@ -102,22 +101,33 @@ const IndexPage = () => (
 
       <ol>
         <li>
-          <strong>Intelligent Automation</strong> - Real-time systems and tools that automatically sense, think and control
+          <strong>Intelligent Automation</strong> - Real-time systems and tools that automatically
+          sense, think and control
         </li>
         <li>
-          <strong>Digital Services</strong> - Connected customers enjoying our services in the physical and digital
+          <strong>Digital Services</strong> - Connected customers enjoying our services in the
+          physical and digital
         </li>
         <li>
-          <strong>Modeling and Simulation</strong> - Digitizing our process technology and knowhow with chemistry and metallurgy
+          <strong>Modeling and Simulation</strong> - Digitizing our process technology and knowhow
+          with chemistry and metallurgy
         </li>
       </ol>
       <p>
         Join us to{' '}
-        <a href="https://www.outotec.com/explore/digitalization/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.outotec.com/explore/digitalization/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           refine data to redefine our industry
         </a>{' '}
         and advance sustainability with{' '}
-        <a href="https://www.outotec.com/sustainability-report/2017/our-agenda/refining-data-for-sustainability/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.outotec.com/sustainability-report/2017/our-agenda/refining-data-for-sustainability/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           digitalization
         </a>
         .
@@ -125,15 +135,14 @@ const IndexPage = () => (
     </ImageTextSection>
 
     <ChatContainer>
-      <p>
-        Would you like to chat about tech or design over a cup of coffee?
-      </p>
+      <p>Would you like to chat about tech or design over a cup of coffee?</p>
       <Button>Sure thing!</Button>
     </ChatContainer>
 
-    <ImageTextSection imageSrc={jaakko} hideWhiteBg={true} >
+    <ImageTextSection imageSrc={jaakko} hideWhiteBg={true}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-      <h4>“I love the challenges and flexibility in my role. We've succeeded in developing a machine
+      <h4>
+        “I love the challenges and flexibility in my role. We've succeeded in developing a machine
         vision system that’s been tried for 30 years.”
       </h4>
       <p>
@@ -144,26 +153,26 @@ const IndexPage = () => (
     </ImageTextSection>
 
     <Banner>
-        <Row>
-          <h2>No fluff, real impact</h2>
-        </Row>
-        <Row>
-          <BannerCol>
-            <h4>6.2 million tonnes</h4>
-            <p>CO2 emissions avoided</p>
-          </BannerCol>
-          <BannerCol>
-            <h4>90% green products</h4>
-            <p>Of our order intake</p>
-          </BannerCol>
-          <BannerCol>
-            <h4>12th most sustainable</h4>
-            <p>Company in the world</p>
-          </BannerCol>
-        </Row>
+      <Row>
+        <h2>No fluff, real impact</h2>
+      </Row>
+      <Row>
+        <BannerCol>
+          <h4>6.2 million tonnes</h4>
+          <p>CO2 emissions avoided</p>
+        </BannerCol>
+        <BannerCol>
+          <h4>90% green products</h4>
+          <p>Of our order intake</p>
+        </BannerCol>
+        <BannerCol>
+          <h4>12th most sustainable</h4>
+          <p>Company in the world</p>
+        </BannerCol>
+      </Row>
     </Banner>
 
-    <ImageTextSection imageSrc={team} >
+    <ImageTextSection imageSrc={team}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
       <h2>// Your team</h2>
       <p>
@@ -173,8 +182,8 @@ const IndexPage = () => (
         solutions.
       </p>
       <p>
-        Bit by bit, we bring modern software and design practices to a relatively conservative industry,
-        where our people have a real impact.
+        Bit by bit, we bring modern software and design practices to a relatively conservative
+        industry, where our people have a real impact.
       </p>
     </ImageTextSection>
 
@@ -182,15 +191,15 @@ const IndexPage = () => (
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
       <h2>// Your tech & design stack</h2>
       <p>
-        For all things web & cloud, we use Azure cloud services, build backends and API's with C# and Node.js,
-        fronts with TypeScript and React. Execution-critical systems, desktop tools and sensor solutions we
-        develop on .NET with a modular architecture and queue-based interfaces. Throw in a bit of ML magic
-        with Python and we're done! 
+        For all things web & cloud, we use Azure cloud services, build backends and API's with C#
+        and Node.js, fronts with TypeScript and React. Execution-critical systems, desktop tools and
+        sensor solutions we develop on .NET with a modular architecture and queue-based interfaces.
+        Throw in a bit of ML magic with Python and we're done!
       </p>
       <p>
-        We don’t expect you to know everything. Having a passion for learning and improving is the key. We
-        support learning by giving you the time and resources to go to conferences and take courses to develop
-        as a professional.
+        We don’t expect you to know everything. Having a passion for learning and improving is the
+        key. We support learning by giving you the time and resources to go to conferences and take
+        courses to develop as a professional.
       </p>
     </ImageTextSection>
 

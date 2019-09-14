@@ -6,7 +6,6 @@ import Hero from '../components/hero';
 import ImageTextSection from '../components/ImageTextSection';
 import earth from '../images/earth.png';
 import team from '../images/team.jpg';
-import scene from '../images/scene.png';
 import jaakko from '../images/jaakko.png';
 import fire from '../images/fire.png';
 import stack from '../images/stack.png';
@@ -17,8 +16,8 @@ import Position from '../components/position';
 import Container from '../components/container';
 import styled from 'styled-components';
 import media from '../styles/media';
-import { Col, Row } from 'react-flexbox-grid';
 import Button from '../components/button';
+import { Banner, BannerCol, BannerRow } from '../components/banner';
 
 const ChatContainer = styled(Container)`
   display: flex;
@@ -40,25 +39,6 @@ const ChatContainer = styled(Container)`
     padding: 8rem 12rem;
   } 
   text-align: center;
-`;
-
-const Banner = styled(Container)`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 25rem;
-  background: url('${scene}') 50% no-repeat;
-  background-position: top center;
-  background-color: #555962;
-  background-size: cover;
-  padding-top: 3rem;
-`;
-
-const BannerCol = styled(Col)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0rem 2rem;
 `;
 
 const IndexPage = () => (
@@ -153,23 +133,25 @@ const IndexPage = () => (
     </ImageTextSection>
 
     <Banner>
-      <Row>
-        <h2>No fluff, real impact</h2>
-      </Row>
-      <Row>
+      <BannerRow center="xs">
         <BannerCol>
-          <h4>6.2 million tonnes</h4>
+          <h2>No fluff, real impact</h2>
+        </BannerCol>
+      </BannerRow>
+      <BannerRow>
+        <BannerCol lg={4}>
+          <h3>6.2 million tonnes</h3>
           <p>CO2 emissions avoided</p>
         </BannerCol>
-        <BannerCol>
-          <h4>90% green products</h4>
+        <BannerCol lg={4}>
+          <h3>90% green products</h3>
           <p>Of our order intake</p>
         </BannerCol>
-        <BannerCol>
-          <h4>12th most sustainable</h4>
+        <BannerCol lg={4}>
+          <h3>12th most sustainable</h3>
           <p>Company in the world</p>
         </BannerCol>
-      </Row>
+      </BannerRow>
     </Banner>
 
     <ImageTextSection imageSrc={team}>

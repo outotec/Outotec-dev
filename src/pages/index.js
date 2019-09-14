@@ -23,7 +23,7 @@ const ChatContainer = styled(Container)`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 31rem;
+  min-height: 31rem;
   background: url('${techchat}') 50% no-repeat;
   background-position: top center;
   background-color: #555962;

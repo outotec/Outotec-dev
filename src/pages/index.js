@@ -19,6 +19,7 @@ import media from '../styles/media';
 import Button from '../components/button';
 import { Banner, BannerCol, BannerRow } from '../components/banner';
 import { Row, Col } from 'react-flexbox-grid';
+import { scroller } from 'react-scroll';
 
 const ChatContainer = styled(Container)`
   display: flex;
@@ -119,7 +120,9 @@ const IndexPage = () => (
       <Row>
         <Col>
           <p>Would you like to chat about tech or design over a cup of coffee?</p>
-          <Button href="#contact">Sure thing!</Button>
+          <Button onClick={() => scroller.scrollTo('contact', { smooth: true })}>
+            Sure thing!
+          </Button>
         </Col>
       </Row>
     </ChatContainer>

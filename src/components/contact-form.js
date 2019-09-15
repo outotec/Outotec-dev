@@ -194,13 +194,13 @@ class ContactForm extends React.Component {
   render() {
     const { children, imageData } = this.props;
     return (
-      <Container id="contact">
+      <Container>
         <Row>
           <ImageCol sm={12} md={8} lg={8} mdOffset={2} lgOffset={2} xlOffset={0}>
             <StyledImage Tag="section" fluid={imageData} backgroundColor={`white`}></StyledImage>
           </ImageCol>
         </Row>
-        <Row>
+        <Row id="contact">
           <Col xs={12} md={8} lg={8} mdOffset={2} lgOffset={2} xlOffset={2} xl={6}>
             <FormIntro>{children}</FormIntro>
           </Col>

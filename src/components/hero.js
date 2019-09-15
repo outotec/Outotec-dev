@@ -4,6 +4,7 @@ import heroImage from '../images/hero-.png';
 import styled from 'styled-components';
 import Button from './button';
 import media from '../styles/media';
+import { scroller } from 'react-scroll';
 
 const HeroImage = styled.div`
   ${media.sm} {
@@ -68,7 +69,9 @@ const Hero = () => (
             Do you want to work with cutting edge technologies and build things at the forefront of
             the digital world?
           </h2>
-          <Button href="#positions">See positions</Button>
+          <Button onClick={() => scroller.scrollTo('positions', { smooth: true, offset: -16 })}>
+            See positions
+          </Button>
         </HeroText>
       </Mask>
     </HeroImage>

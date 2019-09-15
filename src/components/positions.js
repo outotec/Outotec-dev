@@ -20,7 +20,7 @@ class Positions extends React.Component {
     console.log(this.props);
     const { children } = this.props;
     return (
-      <PositionContainer>
+      <PositionContainer id="positions">
         <Row>
           <Col sm={12} md={8} mdOffset={2}>
             <StaticQuery

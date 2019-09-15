@@ -194,7 +194,7 @@ class ContactForm extends React.Component {
   render() {
     const { children, imageData } = this.props;
     return (
-      <Container>
+      <Container id="contact">
         <Row>
           <ImageCol sm={12} md={8} lg={8} mdOffset={2} lgOffset={2} xlOffset={0}>
             <StyledImage Tag="section" fluid={imageData} backgroundColor={`white`}></StyledImage>
@@ -286,7 +286,7 @@ class ContactForm extends React.Component {
                           </Message>
                         </Field>
                         <Field>
-                          <FormButton type="submit" disabled={isSubmitting}>
+                          <FormButton type="submit" disabled={isSubmitting} as="button">
                             <span>
                               {isSubmitting ? (
                                 <Spinner size={18} color={colors.accent1} loading={true} />

@@ -119,7 +119,7 @@ const IndexPage = () => (
       <Row>
         <Col>
           <p>Would you like to chat about tech or design over a cup of coffee?</p>
-          <Button>Sure thing!</Button>
+          <Button href="#contact">Sure thing!</Button>
         </Col>
       </Row>
     </ChatContainer>

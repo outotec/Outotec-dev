@@ -112,7 +112,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" description="" meta="" />
       <Hero imageData={imageData.hero.childImageSharp.fluid}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>

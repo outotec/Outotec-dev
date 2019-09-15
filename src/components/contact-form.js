@@ -227,7 +227,7 @@ class ContactForm extends React.Component {
                     }) => (
                       <StyledForm onSubmit={!isSubmitting ? handleSubmit : undefined}>
                         <Field>
-                          <label>Your name</label>
+                          <label htmlFor="name">Your name</label>
                           <input
                             type="name"
                             name="name"
@@ -238,7 +238,7 @@ class ContactForm extends React.Component {
                           <Message>{errors.name && touched.name && errors.name}</Message>
                         </Field>
                         <Field>
-                          <label>Your LinkedIn profile</label>
+                          <label htmlFor="linkedin">Your LinkedIn profile</label>
                           <input
                             type="linkedin"
                             name="linkedin"
@@ -251,7 +251,7 @@ class ContactForm extends React.Component {
                           </Message>
                         </Field>
                         <Field>
-                          <label>Your email address</label>
+                          <label htmlFor="email">Your email address</label>
                           <input
                             type="email"
                             name="email"
@@ -262,7 +262,7 @@ class ContactForm extends React.Component {
                           <Message>{errors.email && touched.email && errors.email}</Message>
                         </Field>
                         <Field>
-                          <label>Your phone number</label>
+                          <label htmlFor="phone">Your phone number</label>
                           <input
                             type="phone"
                             name="phone"
@@ -273,7 +273,7 @@ class ContactForm extends React.Component {
                           <Message>{errors.phone && touched.phone && errors.phone}</Message>
                         </Field>
                         <Field>
-                          <label>Questions? Free word</label>
+                          <label htmlFor="message">Questions? Free word</label>
                           <textarea
                             type="message"
                             name="message"

@@ -19,7 +19,7 @@ const StyledHeader = styled.header`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <Container>
-      <LogoImg src={logo} />
+      <LogoImg src={logo} alt="Outotec logo" />
     </Container>
   </StyledHeader>
 );

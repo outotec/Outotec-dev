@@ -17,7 +17,6 @@ const PositionContainer = styled(Container)`
 
 class Positions extends React.Component {
   render() {
-    console.log(this.props);
     const { children } = this.props;
     return (
       <PositionContainer>
@@ -28,8 +27,8 @@ class Positions extends React.Component {
                 query {
                   desktop: file(relativePath: { eq: "ors.png" }) {
                     childImageSharp {
-                      fluid(quality: 90, maxWidth: 1200) {
-                        ...GatsbyImageSharpFluid_withWebp
+                      fluid(quality: 90, maxWidth: 1000) {
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
                     }
                   }

@@ -115,7 +115,6 @@ const ImageTextSection = ({
   if (!imageData) {
     return <div></div>;
   }
-  console.log(imageData);
   const image = (
     <ImageCol xs={12} md={8} mdOffset={2} lgOffset={0} hideImageInMobile={hideImageInMobile}>
       <StyledImg

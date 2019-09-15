@@ -17,7 +17,6 @@ const PositionContainer = styled(Container)`
 
 class Positions extends React.Component {
   render() {
-    console.log(this.props);
     const { children } = this.props;
     return (
       <PositionContainer>

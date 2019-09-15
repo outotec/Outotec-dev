@@ -45,7 +45,7 @@ const IndexPage = () => {
       hero: file(relativePath: { eq: "hero-.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
@@ -55,7 +55,7 @@ const IndexPage = () => {
           # Makes it trivial to update as your page's design changes.
           fluid(quality: 90, maxWidth: 1000) {
             # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
@@ -65,7 +65,7 @@ const IndexPage = () => {
           # Makes it trivial to update as your page's design changes.
           fluid(quality: 90, maxWidth: 1000) {
             # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
@@ -75,35 +75,35 @@ const IndexPage = () => {
           # Makes it trivial to update as your page's design changes.
           fluid(quality: 90, maxWidth: 1000) {
             # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
       jaakko: file(relativePath: { eq: "jaakko.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
       techchat: file(relativePath: { eq: "techchat.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
       stack: file(relativePath: { eq: "stack.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
       coffee: file(relativePath: { eq: "coffee.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }

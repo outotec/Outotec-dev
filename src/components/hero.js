@@ -18,7 +18,6 @@ const HeroImage = styled(BackgroundImage)`
   align-items: flex-start;
   height: 43.75rem;
   background-position: top center;
-  background-color: #555962;
   background-size: cover;
 `;
 

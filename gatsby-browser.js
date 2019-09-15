@@ -9,11 +9,9 @@ import { scroller } from 'react-scroll';
 import { globalHistory } from '@reach/router';
 
 globalHistory.listen(({ location }) => {
-  console.log(location.href);
   if (location.href.indexOf('#') > 0) {
     const splitHref = location.href.split('#');
     const hashVal = splitHref[splitHref.length - 1];
-    console.log(hashVal);
     setTimeout(() => scroller.scrollTo(hashVal, { smooth: true }), 0);
   }
 });

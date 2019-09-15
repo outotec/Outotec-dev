@@ -9,13 +9,13 @@ const StyledImageTextSection = styled.div`
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
 
 const ContentCol = styled(Col)`
   ${props => !props.hideWhiteBg && `background-color: #ffffff;`}
-  
+
   ${media.md} {
     min-width: 33rem;
   }
@@ -66,7 +66,6 @@ const Content = styled.div`
       margin-right: 3.75rem;
       margin-left: 7.8125rem;
     `}
-      
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
 
@@ -82,11 +81,7 @@ const Content = styled.div`
 `;
 
 const StyledImg = styled.img`
-  height: 162px;
-
-  ${media.sm} {
-    height: 320px;
-  }
+  height: ${props => props.mobileImageHeight || '320px'};
 
   ${media.lg} {
     margin-top: 2.9375rem;
@@ -94,18 +89,29 @@ const StyledImg = styled.img`
     height: 429px;
   }
 
+  ${media.lg} {
+    margin-bottom: 2rem;
+  }
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   width: 100%;
-  object-fit: cover;
+  object-fit: ${props => props.objectFit || 'cover'};
   object-position: 50% 20%;
   // box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
-const ImageTextSection = ({ imageSrc, children, imageLeft, hideImageInMobile, hideWhiteBg }) => {
+const ImageTextSection = ({
+  imageSrc,
+  children,
+  imageLeft,
+  hideImageInMobile,
+  hideWhiteBg,
+  mobileImageHeight,
+  objectFit,
+}) => {
   const image = (
     <ImageCol xs={12} md={8} mdOffset={2} lgOffset={0} hideImageInMobile={hideImageInMobile}>
-      <StyledImg src={imageSrc} />
+      <StyledImg src={imageSrc} mobileImageHeight={mobileImageHeight} objectFit={objectFit} />
     </ImageCol>
   );
 

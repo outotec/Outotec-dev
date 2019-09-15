@@ -10,7 +10,7 @@ export const Banner = styled(Container)`
   flex-direction: column;
   min-height: 25rem;
   background: url('${scene}') 50% no-repeat;
-  background-position: top center;
+  background-position: ${props => props.backgroundPosition || 'top center'};
   background-size: cover;
   padding-top: 3rem;
   padding-bottom: 3rem;

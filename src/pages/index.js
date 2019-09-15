@@ -18,6 +18,7 @@ import styled from 'styled-components';
 import media from '../styles/media';
 import Button from '../components/button';
 import { Banner, BannerCol, BannerRow } from '../components/banner';
+import { Row, Col } from 'react-flexbox-grid';
 
 const ChatContainer = styled(Container)`
   display: flex;
@@ -25,7 +26,7 @@ const ChatContainer = styled(Container)`
   flex-direction: column;
   min-height: 31rem;
   background: url('${techchat}') 50% no-repeat;
-  background-position: top center;
+  background-position: ${props => props.backgroundPosition || 'top center'};;
   background-color: #555962;
   background-size: cover;
   padding-top: 3rem;
@@ -114,12 +115,16 @@ const IndexPage = () => (
       </p>
     </ImageTextSection>
 
-    <ChatContainer>
-      <p>Would you like to chat about tech or design over a cup of coffee?</p>
-      <Button>Sure thing!</Button>
+    <ChatContainer backgroundPosition="35% 50%">
+      <Row>
+        <Col>
+          <p>Would you like to chat about tech or design over a cup of coffee?</p>
+          <Button>Sure thing!</Button>
+        </Col>
+      </Row>
     </ChatContainer>
 
-    <ImageTextSection imageSrc={jaakko} hideWhiteBg={true}>
+    <ImageTextSection imageSrc={jaakko} hideWhiteBg={true} mobileImageHeight={'32rem'}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
       <h4>
         “I love the challenges and flexibility in my role. We've succeeded in developing a machine
@@ -169,7 +174,7 @@ const IndexPage = () => (
       </p>
     </ImageTextSection>
 
-    <ImageTextSection imageSrc={stack} imageLeft={true} hideWhiteBg={true}>
+    <ImageTextSection imageSrc={stack} imageLeft={true} hideWhiteBg={true} objectFit={'contain'}>
       {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
       <h2>// Your tech & design stack</h2>
       <p>

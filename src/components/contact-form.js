@@ -229,6 +229,7 @@ class ContactForm extends React.Component {
                         <Field>
                           <label htmlFor="name">Your name</label>
                           <input
+                            id="name"
                             type="name"
                             name="name"
                             onChange={handleChange}
@@ -240,6 +241,7 @@ class ContactForm extends React.Component {
                         <Field>
                           <label htmlFor="linkedin">Your LinkedIn profile</label>
                           <input
+                            id="linkedin"
                             type="linkedin"
                             name="linkedin"
                             onChange={handleChange}
@@ -253,6 +255,7 @@ class ContactForm extends React.Component {
                         <Field>
                           <label htmlFor="email">Your email address</label>
                           <input
+                            id="linkedin"
                             type="email"
                             name="email"
                             onChange={handleChange}
@@ -264,6 +267,7 @@ class ContactForm extends React.Component {
                         <Field>
                           <label htmlFor="phone">Your phone number</label>
                           <input
+                            id="phone"
                             type="phone"
                             name="phone"
                             onChange={handleChange}
@@ -275,6 +279,7 @@ class ContactForm extends React.Component {
                         <Field>
                           <label htmlFor="message">Questions? Free word</label>
                           <textarea
+                            id="message"
                             type="message"
                             name="message"
                             onChange={handleChange}

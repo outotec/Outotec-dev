@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
         <Container>
           <Row>
             <StyledCol xs={12} sm={4} md={3}>
-              <LogoImg src={logo} />
+              <LogoImg src={logo} alt="Outotec logo" />
             </StyledCol>
             <StyledCol xs={12} sm={4} md={3}>
               {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}

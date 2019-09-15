@@ -3,6 +3,7 @@ import Container from './container';
 import styled from 'styled-components';
 import { Col, Row } from 'react-flexbox-grid';
 import media from '../styles/media';
+import Img from 'gatsby-image/withIEPolyfill';
 
 const StyledImageTextSection = styled.div`
   ${media.lg} {
@@ -80,7 +81,7 @@ const Content = styled.div`
   margin-left: 1rem;
 `;
 
-const StyledImg = styled.img`
+const StyledImg = styled(Img)`
   height: ${props => props.mobileImageHeight || '320px'};
 
   ${media.lg} {
@@ -95,23 +96,34 @@ const StyledImg = styled.img`
   margin-top: 2rem;
   margin-bottom: 0rem;
   width: 100%;
-  object-fit: ${props => props.objectFit || 'cover'};
-  object-position: 50% 20%;
+  // object-fit: ${props => props.objectFit || 'cover'};
+  // object-position: 50% 20%;
   // box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
 const ImageTextSection = ({
   imageSrc,
+  imageData,
   children,
   imageLeft,
   hideImageInMobile,
   hideWhiteBg,
   mobileImageHeight,
   objectFit,
+  objectPosition,
 }) => {
+  if (!imageData) {
+    return <div></div>;
+  }
+  console.log(imageData);
   const image = (
     <ImageCol xs={12} md={8} mdOffset={2} lgOffset={0} hideImageInMobile={hideImageInMobile}>
-      <StyledImg src={imageSrc} mobileImageHeight={mobileImageHeight} objectFit={objectFit} />
+      <StyledImg
+        fluid={imageData}
+        mobileImageHeight={mobileImageHeight}
+        objectFit={objectFit}
+        objectPosition={objectPosition}
+      />
     </ImageCol>
   );
 

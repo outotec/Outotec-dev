@@ -1,12 +1,11 @@
 import React from 'react';
 import Container from './container';
-import heroImage from '../images/hero-.png';
 import styled from 'styled-components';
 import Button from './button';
 import media from '../styles/media';
-import { scroller } from 'react-scroll';
+import BackgroundImage from 'gatsby-background-image';
 
-const HeroImage = styled.div`
+const HeroImage = styled(BackgroundImage)`
   ${media.sm} {
     margin-left: 0;
     margin-right: 0;
@@ -18,11 +17,9 @@ const HeroImage = styled.div`
   display: flex;
   align-items: flex-start;
   height: 43.75rem;
-  background: url('${heroImage}') 50% no-repeat;
   background-position: top center;
   background-color: #555962;
   background-size: cover;
-  // box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
 const Mask = styled.div`
@@ -59,20 +56,11 @@ const HeroText = styled.div`
   }
 `;
 
-const Hero = () => (
+const Hero = ({ imageData, children }) => (
   <Container>
-    <HeroImage>
+    <HeroImage fluid={imageData}>
       <Mask>
-        <HeroText>
-          {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-          <h2>
-            Do you want to work with cutting edge technologies and build things at the forefront of
-            the digital world?
-          </h2>
-          <Button onClick={() => scroller.scrollTo('positions', { smooth: true, offset: -16 })}>
-            See positions
-          </Button>
-        </HeroText>
+        <HeroText>{children}</HeroText>
       </Mask>
     </HeroImage>
   </Container>

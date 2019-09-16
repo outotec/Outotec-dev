@@ -79,7 +79,7 @@ const IndexPage = () => {
           }
         }
       }
-      jaakko: file(relativePath: { eq: "jaakko.png" }) {
+      jaakko: file(relativePath: { eq: "jaakko-2.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -214,7 +214,7 @@ const IndexPage = () => {
         imageData={imageData.jaakko.childImageSharp.fluid}
         hideWhiteBg={true}
         mobileImageHeight={'32rem'}
-        objectPosition={'top center'}
+        objectPosition={'top left'}
         reverseImageOrderInMobile={true}
       >
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}

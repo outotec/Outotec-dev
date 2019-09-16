@@ -97,11 +97,25 @@ const StyledImg = styled(Img)`
   width: 100%;
 `;
 
+const StyledRow = styled(Row)`
+  ${props => props.reverseImageOrderInMobile && 'flex-direction: column-reverse !important;'}
+  ${ImageCol} {
+    margin-bottom: 2rem;
+    ${media.lg} {
+      margin-bottom: 0rem;
+    }
+  }
+  ${media.lg} {
+    flex-direction: row !important;
+  }
+`;
+
 const ImageTextSection = ({
   imageData,
   children,
   imageLeft,
   hideImageInMobile,
+  reverseImageOrderInMobile,
   hideWhiteBg,
   mobileImageHeight,
   objectFit,
@@ -149,10 +163,10 @@ const ImageTextSection = ({
   return (
     <Container>
       <StyledImageTextSection>
-        <Row>
+        <StyledRow reverseImageOrderInMobile={reverseImageOrderInMobile}>
           {imageLeft ? image : content}
           {imageLeft ? content : image}
-        </Row>
+        </StyledRow>
       </StyledImageTextSection>
     </Container>
   );

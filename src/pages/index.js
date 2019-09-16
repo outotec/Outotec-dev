@@ -123,7 +123,10 @@ const IndexPage = () => {
           See positions
         </Button>
       </Hero>
-      <ImageTextSection imageData={imageData.earth.childImageSharp.fluid}>
+      <ImageTextSection
+        imageData={imageData.earth.childImageSharp.fluid}
+        reverseImageOrderInMobile={true}
+      >
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// What we offer you</h2>
         <ul>
@@ -148,11 +151,7 @@ const IndexPage = () => {
         </ul>
       </ImageTextSection>
 
-      <ImageTextSection
-        imageData={imageData.fire.childImageSharp.fluid}
-        imageLeft={true}
-        hideImageInMobile={true}
-      >
+      <ImageTextSection imageData={imageData.fire.childImageSharp.fluid} imageLeft={true}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// What you get to do</h2>
 
@@ -216,6 +215,7 @@ const IndexPage = () => {
         hideWhiteBg={true}
         mobileImageHeight={'32rem'}
         objectPosition={'top center'}
+        reverseImageOrderInMobile={true}
       >
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h4>
@@ -250,7 +250,11 @@ const IndexPage = () => {
           </BannerCol>
         </BannerRow>
       </Banner>
-      <ImageTextSection imageData={imageData.team.childImageSharp.fluid} wideImage={true}>
+      <ImageTextSection
+        imageData={imageData.team.childImageSharp.fluid}
+        wideImage={true}
+        reverseImageOrderInMobile={true}
+      >
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// Your team</h2>
         <p>

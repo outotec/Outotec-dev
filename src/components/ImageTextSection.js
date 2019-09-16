@@ -17,10 +17,6 @@ const StyledImageTextSection = styled.div`
 const ContentCol = styled(Col)`
   ${props => !props.hideWhiteBg && `background-color: #ffffff;`}
 
-  ${media.md} {
-    min-width: 33rem;
-  }
-
   ${media.lg} {
     ${props =>
       props.imageLeft &&
@@ -86,23 +82,22 @@ const StyledImg = styled(Img)`
 
   ${media.lg} {
     margin-top: 2.9375rem;
-    width: 272px;
-    height: 429px;
-  }
-
-  ${media.lg} {
+    width: ${props => (props.wideImage ? '480px' : '272px')};
+    height: ${props => (props.wideImage ? 'auto' : '429px')};
     margin-bottom: 2rem;
   }
+
+  ${media.xl} {
+    width: ${props => (props.wideImage ? '547px' : '272px')};
+    height: ${props => (props.wideImage ? '328px' : '429px')};
+  }
+
   margin-top: 2rem;
   margin-bottom: 0rem;
   width: 100%;
-  // object-fit: ${props => props.objectFit || 'cover'};
-  // object-position: 50% 20%;
-  // box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.25);
 `;
 
 const ImageTextSection = ({
-  imageSrc,
   imageData,
   children,
   imageLeft,
@@ -111,33 +106,42 @@ const ImageTextSection = ({
   mobileImageHeight,
   objectFit,
   objectPosition,
+  wideImage,
 }) => {
   if (!imageData) {
     return <div></div>;
   }
+
+  const imageColDefinitions = {
+    xs: 12,
+    md: wideImage ? 10 : 10,
+    xl: 2,
+    mdOffset: wideImage ? 1 : 1,
+    lgOffset: 0,
+  };
+  const contentColDefinitions = {
+    sm: 12,
+    md: 10,
+    lg: wideImage ? 6 : 7,
+    xl: wideImage ? 6 : 7,
+    mdOffset: 1,
+    lgOffset: imageLeft || wideImage ? 0 : 1,
+    xlOffset: imageLeft || wideImage ? 0 : 2,
+  };
   const image = (
-    <ImageCol xs={12} md={8} mdOffset={2} lgOffset={0} hideImageInMobile={hideImageInMobile}>
+    <ImageCol {...imageColDefinitions} hideImageInMobile={hideImageInMobile}>
       <StyledImg
         fluid={imageData}
         mobileImageHeight={mobileImageHeight}
         objectFit={objectFit}
         objectPosition={objectPosition}
+        wideImage={wideImage}
       />
     </ImageCol>
   );
 
   const content = (
-    <ContentCol
-      sm={12}
-      md={8}
-      lg={7}
-      xl={7}
-      mdOffset={2}
-      lgOffset={imageLeft ? 0 : 1}
-      xlOffset={imageLeft ? 0 : 2}
-      imageLeft={imageLeft}
-      hideWhiteBg={hideWhiteBg}
-    >
+    <ContentCol {...contentColDefinitions} imageLeft={imageLeft} hideWhiteBg={hideWhiteBg}>
       <Content imageLeft={imageLeft}>{children}</Content>
     </ContentCol>
   );

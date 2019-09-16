@@ -250,7 +250,7 @@ const IndexPage = () => {
           </BannerCol>
         </BannerRow>
       </Banner>
-      <ImageTextSection imageData={imageData.team.childImageSharp.fluid}>
+      <ImageTextSection imageData={imageData.team.childImageSharp.fluid} wideImage={true}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// Your team</h2>
         <p>

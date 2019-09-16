@@ -196,17 +196,17 @@ class ContactForm extends React.Component {
     return (
       <Container>
         <Row>
-          <ImageCol sm={12} md={8} lg={8} mdOffset={2} lgOffset={2} xlOffset={0}>
+          <ImageCol sm={12} md={10} mdOffset={1} xlOffset={0}>
             <StyledImage Tag="section" fluid={imageData} backgroundColor={`white`}></StyledImage>
           </ImageCol>
         </Row>
         <Row id="contact">
-          <Col xs={12} md={8} lg={8} mdOffset={2} lgOffset={2} xlOffset={2} xl={6}>
+          <Col xs={12} md={10} mdOffset={1} lgOffset={3} xlOffset={2} xl={6}>
             <FormIntro>{children}</FormIntro>
           </Col>
         </Row>
         <Row>
-          <FormCol xs={12} md={8} lg={6} mdOffset={2} lgOffset={2} xlOffset={2} xl={6}>
+          <FormCol xs={12} md={10} lg={6} mdOffset={1} lgOffset={3} xlOffset={2} xl={6}>
             <FormContainer>
               <AnimateHeight duration={500} height={this.state.status !== 'SUBMITTED' ? 'auto' : 0}>
                 {this.state.status !== 'SUBMITTEDr' && (

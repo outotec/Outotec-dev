@@ -49,7 +49,7 @@ class Position extends React.Component {
     const { children, title } = this.props;
     const { open } = this.state;
     return (
-      <PositionCol sm={12} md={8} mdOffset={2}>
+      <PositionCol sm={12} md={10} mdOffset={1}>
         <Role onClick={this.toggleOpen}>
           {open ? <img alt="minus" src={minus} /> : <img alt="plus" src={plus} />}
           <h3>{title}</h3>

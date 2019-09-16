@@ -21,7 +21,7 @@ class Positions extends React.Component {
     return (
       <PositionContainer>
         <Row>
-          <Col sm={12} md={8} mdOffset={2}>
+          <Col sm={12} md={10} mdOffset={1}>
             <StaticQuery
               query={graphql`
                 query {

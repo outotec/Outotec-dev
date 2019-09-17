@@ -39,7 +39,7 @@ class Positions extends React.Component {
               )}
             />
             {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-            <h2 id="positions">// Open positions</h2>
+            <h2 id="positions">// We're looking for</h2>
           </Col>
         </Row>
         <Row>{children}</Row>

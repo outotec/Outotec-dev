@@ -18,7 +18,7 @@ const Role = styled.div`
   h3 {
     display: inline-block;
     margin-left: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'DINWebPro-Bold W02 Regular';
   }
   cursor: pointer;
@@ -27,7 +27,7 @@ const Description = styled.div`
   margin-left: 1.8rem;
   margin-right: 1.8rem;
   overflow: hidden;
-  max-height: 1000px;
+  max-height: 2000px;
   box-sizing: border-box;
   transition: max-height 0.5s ease;
   margin-top: -1rem;

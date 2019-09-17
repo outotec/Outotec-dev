@@ -14,11 +14,10 @@ import Header from './header';
 import Container from './container';
 import logo from '../images/Outotec-Logo.svg';
 import slogan from '../images/outotec-slogan.svg';
-import { Row, Col } from 'react-flexbox-grid';
-import { colors } from '../styles/constants';
+import { Col } from 'react-flexbox-grid';
 import xPattern from '../images/x-pattern.svg';
 import media from '../styles/media';
-
+import CookieConsent from '../components/cookie-consent';
 const StyledLayout = styled.div``;
 
 const PatternBackground = styled.div`
@@ -49,11 +48,6 @@ const SloganImg = styled.img`
 const StyledFooter = styled.footer`
   width: 100%;
   margin-top: 3.75rem;
-`;
-
-const StyledCol = styled(Col)`
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 `;
 
 const FooterContainer = styled(Container)`
@@ -117,6 +111,7 @@ const Layout = ({ children }) => {
           </div>
         </FooterContainer>
       </StyledFooter>
+      <CookieConsent />
       <GlobalStyles />
     </StyledLayout>
   );

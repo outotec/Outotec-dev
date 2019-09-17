@@ -20,22 +20,24 @@ const ContentCol = styled(Col)`
   ${media.lg} {
     ${props =>
       props.imageLeft &&
-      ` 
-      z-index: -1;
+      `
       position: relative;
       left: -3.27rem;
     `}
     ${props =>
       !props.imageLeft &&
       ` 
-      z-index: -1;
       position: relative;
       left: 3.27rem;
     `}
+    ${media.xl} {
+      ${props => props.imageLeft && `left: 1rem;`}
+    }
   }
 `;
 
 const ImageCol = styled(Col)`
+  z-index: 100;
   ${props => props.hideImageInMobile && `display: none;`}
   ${media.lg} {
     display: block;
@@ -132,6 +134,7 @@ const ImageTextSection = ({
     xl: 2,
     mdOffset: wideImage ? 1 : 1,
     lgOffset: 0,
+    xlOffset: 0,
   };
   const contentColDefinitions = {
     sm: 12,

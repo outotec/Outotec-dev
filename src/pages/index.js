@@ -153,8 +153,8 @@ const IndexPage = () => {
             together (for real)
           </li>
           <li>
-            An environment where trying out new things and roles are encouraged; be it experimenting
-            with new technologies or taking on tasks in new projects 
+            An environment where trying out new things and roles are encouraged; be it{' '}
+            <strong>experimenting</strong> with new technologies or taking on tasks in new projects 
           </li>
         </ul>
       </ImageTextSection>

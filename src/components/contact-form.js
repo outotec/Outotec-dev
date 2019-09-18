@@ -29,6 +29,11 @@ const Field = styled.div`
 
     box-sizing: border-box;
   }
+  input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
   textarea {
     width: 100%;
     height: 5rem;
@@ -40,6 +45,13 @@ const Message = styled.div`
   color: white;
   font-size: 0.8rem;
   height: 1rem;
+`;
+
+const ConsentLabel = styled.label`
+  display: inline !important;
+  a {
+    color: white;
+  }
 `;
 
 const FormButton = styled(Button)`
@@ -143,6 +155,10 @@ const validate = values => {
     errors.phone = '* Required';
   }
 
+  if (!values.consent) {
+    errors.consent = '* Required';
+  }
+
   if (!values.email) {
     errors.email = '* Required';
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
@@ -209,9 +225,16 @@ class ContactForm extends React.Component {
           <FormCol xs={12} md={10} lg={6} mdOffset={1} lgOffset={3} xlOffset={2} xl={6}>
             <FormContainer>
               <AnimateHeight duration={500} height={this.state.status !== 'SUBMITTED' ? 'auto' : 0}>
-                {this.state.status !== 'SUBMITTEDr' && (
+                {
                   <Formik
-                    initialValues={{ name: '', linkedin: '', email: '', phone: '', message: '' }}
+                    initialValues={{
+                      name: '',
+                      linkedin: '',
+                      email: '',
+                      phone: '',
+                      message: '',
+                      consent: '',
+                    }}
                     validate={validate}
                     onSubmit={this.onSubmit}
                   >
@@ -291,6 +314,32 @@ class ContactForm extends React.Component {
                           </Message>
                         </Field>
                         <Field>
+                          <input
+                            id="consent"
+                            name="consent"
+                            type="checkbox"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.consent}
+                          />
+                          <ConsentLabel htmlFor="consent">
+                            Yes, I give the consent to Outotec to store and use my contact
+                            information to respond to my inquiry
+                            <p>
+                              We respect your privacy, information is collected and processed
+                              according to{' '}
+                              <a
+                                href="https://www.outotec.com/site/Data-protection-and-privacy/#privacy"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Outotec Privacy Statement.
+                              </a>
+                            </p>
+                          </ConsentLabel>
+                          <Message>{errors.consent && touched.consent && errors.consent}</Message>
+                        </Field>
+                        <Field>
                           <FormButton type="submit" disabled={isSubmitting} as="button">
                             <span>
                               {isSubmitting ? (
@@ -304,7 +353,7 @@ class ContactForm extends React.Component {
                       </StyledForm>
                     )}
                   </Formik>
-                )}
+                }
               </AnimateHeight>
               <AnimateHeight duration={500} height={this.state.status !== 'SUBMITTED' ? 0 : 'auto'}>
                 <ThankYouMessage visible={this.state.status === 'SUBMITTED'}>

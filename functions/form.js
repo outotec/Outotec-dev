@@ -25,7 +25,7 @@ const handler = function(event, context, callback) {
         ([key, value]) =>
           `<b>${htmlEncode.htmlEncode(key)}</b>
         <div style="border: 1px solid #1e1e1e; border-radius: 4px; margin-bottom:12px; padding-left: 12px; padding-right: 12px;">
-          <p>${htmlEncode.htmlEncode(value)}</p>
+          <p>${htmlEncode.htmlEncode(String(value))}</p>
         </div>`,
       )
       .join('');

@@ -100,7 +100,7 @@ const IndexPage = () => {
           }
         }
       }
-      coffee: file(relativePath: { eq: "coffee.png" }) {
+      contact: file(relativePath: { eq: "jussi-j-2.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -530,13 +530,23 @@ const IndexPage = () => {
         */}
       </Positions>
 
-      <ContactForm imageData={imageData.coffee.childImageSharp.fluid}>
+      <ContactForm imageData={imageData.contact.childImageSharp.fluid}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// Swing by for a visit</h2>
         <p>
           If this sounds like something you might be interested in, drop by for a casual chat about
           tech and design. We don’t have bean bags but we got beer. And coke. We got coffee and tea
           too. And cookies. No pressure.
+        </p>
+        <p>
+          <strong>Jussi Järvinen</strong>
+          <br />
+          <span>Director, Digital Solutions Platform</span>
+          <br />
+          <a href="mailto:jussi.jarvinen@outotec.com">jussi.jarvinen@outotec.com</a>
+          <br />
+          <a href="tel:+358 40 831 2769">+358 40 831 2769</a>
+          <br />
         </p>
       </ContactForm>
     </Layout>

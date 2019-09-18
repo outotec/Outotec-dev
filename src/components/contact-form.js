@@ -110,6 +110,7 @@ const FormContainer = styled.div`
 
 const FormIntro = styled.div`
   max-width: 25rem;
+  padding-bottom: 1rem;
   ${media.xl} {
     float: right;
   }
@@ -133,6 +134,7 @@ const ImageCol = styled(Col)`
 `;
 
 const StyledImage = styled(BackgroundImage)`
+  background-position: left center;
   ${media.md} {
     height: 400px;
   }

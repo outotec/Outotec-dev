@@ -311,66 +311,55 @@ const IndexPage = () => {
       <Positions>
         <Position title={'Lead Cloud Developer, Espoo'}>
           <p>
-            We are looking for new lead developer to join our cloud-based customer portal
-            development team. The portal is the main interface for our customers to access
-            information such as documentation, spare part information and service requests, but it
-            also acts as the delivery channel more advanced content such as asset health analytics,
-            digital twin simulators or training environments.
+            We are looking for new lead developer to join our customer portal development team. The
+            cloud-based portal will offer asset analytics, digital twins or virtual training
+            environments, and access to information such as documents, spare part catalogs and
+            service requests to our customers.
           </p>
           <p>
-            The customer portal is developed in the Outotec Digital Solutions Platform where we
-            create factories of the future together with our customers. We are a team of over thirty
-            software professionals focused on solving real-world challenges to improve safety,
-            performance and sustainability of our customers’ operations. We use a multitude of
-            different technologies such as machine vision, physics and chemistry-based simulation,
-            advanced process control and optimization, IoT and connectivity, analytics and machine
-            learning, and a web portal to deliver our digital services.
-          </p>
-          <p>
-            <strong>What awaits you</strong>
+            The customer portal is developed as part of Outotec’s Digital Solutions Platform – a
+            team of over thirty software professionals focused on solving real-world challenges to
+            improve safety, performance and sustainability of our customers’ operations. We use a
+            multitude of technologies such as machine vision, physics and chemistry-based
+            simulation, advanced process control and optimization, IoT and connectivity, analytics
+            and machine learning, and a web portal to enable development and delivery of Outotec’s
+            digital services.
           </p>
           <ul>
             <li>
-              Demanding software development tasks in the multiple facets of the customer portal,
-              frontend, backend, API’s, access management, component libraries
+              Lead role in architecture design and technology decisions regarding the customer
+              portal
             </li>
-            <li>Lead role in architecture design and technology decisions</li>
+            <li>Close collaboration with the product owner and the multiple stakeholders</li>
             <li>
-              Close collaboration with the product owner and the multiple stakeholders of the portal
+              Demanding software development tasks in the frontend, backend, API’s, access
+              management, component libraries, etc.
             </li>
-            <li>
-              An architect role also outside the portal team as a specialist in cloud technologies
-            </li>
+            <li>An architect role outside the portal team as a specialist in cloud technologies</li>
           </ul>
           <p>
             <strong>We offer you</strong>
           </p>
           <ul>
+            <li>A diverse team full of skills and passion, ready to support you at every turn</li>
             <li>
-              A diverse team of full of skills and passion, ready to support you at every turn
+              A global environment in a company that provides leading technologies and services for
+              the sustainable use of Earth’s natural resources
             </li>
             <li>
-              A global environment in a world’s leading company in minerals and metals processing
-              technology
-            </li>
-            <li>
-              Agility within a large corporation, small enough to feel like home, large enough to
+              Agility within a large corporation – small enough to feel like home, large enough to
               have impact
             </li>
-            <li>A chance to contribute to the ways of working</li>
+            <li>A chance to contribute to our ways of working</li>
             <li>
               Opportunities and time to learn, grow and develop yourself with training, courses,
-              seminars, books or real project work
+              seminars, books and real project work
             </li>
             <li>
-              An environment where trying out new things and roles are encouraged; be it
+              An environment where trying out new things and roles are encouraged – be it
               experimenting with new technologies or taking on tasks in new projects
             </li>
             <li>Flexibility of work</li>
-            <li>
-              Possibility to participate in the success of the company through the Outotec share
-              incentive program
-            </li>
           </ul>
           <p>
             <strong>We appreciate</strong>
@@ -384,8 +373,8 @@ const IndexPage = () => {
             <li>Real interest in solving challenges and taking pride in the products you build</li>
             <li>Hands-on experience and experimentation in diverse technologies</li>
             <li>
-              You to express your own opinions and justify them, to support decisions and evolve how
-              we work as a team
+              Skills and willingness to express your own opinions and to justify them, for
+              supporting decision making and developing the ways we work as a team
             </li>
             <li>
               Learning and experimentation as a habit to develop and adapt to the changing
@@ -399,68 +388,61 @@ const IndexPage = () => {
             in our quest!
           </p>
         </Position>
-        <Position title={'Software Developer, Pori'}>
+        <Position title={'.NET Developer, Pori'}>
           <p>
-            We are looking for new talent to join our development team for HSC Chemistry at our Pori
-            Research Center. HSC is the main element of our modeling and simulation solutions and is
-            the basis for Outotec engineers to design processes and dimension equipment for mineral
-            and metals processing plants. More and more we are also exploiting the technology to
-            create digital twins of the processing plants for training, forecasting and optimizing
-            the operations.{' '}
+            We are looking for new talent to join our development team for{' '}
+            <a href="http://www.outotec.com/HSC" target="_blank" rel="noopener noreferrer">
+              HSC Chemistry
+            </a>{' '}
+            at our Pori Research Center. HSC is the main element of our modeling and simulation
+            solutions and is the basis for Outotec engineers to design processes and dimension
+            equipment for mineral and metals processing plants. More and more we are also exploiting
+            the technology to create digital twins of the processing plants for training,
+            forecasting and optimizing the operations.
           </p>
           <p>
-            Modeling and simulation is part of the Outotec Digital Solutions Platform where we
-            create factories of the future together with our customers. We are a team of over thirty
-            software professionals focused on solving real-world challenges to improve safety,
-            performance and sustainability of our customers’ operations. We use a multitude of
-            different technologies such as machine vision, physics and chemistry-based simulation,
-            advanced process control and optimization, IoT and connectivity, analytics and machine
-            learning, and a web portal to deliver our digital services.
-          </p>
-          <p>
-            <strong>What awaits you</strong>
+            Modeling and simulation is part of Outotec’s Digital Solutions Platform – a team of over
+            thirty software professionals focused on solving real-world challenges to improve
+            safety, performance and sustainability of our customers’ operations. We use a multitude
+            of different technologies such as machine vision, physics and chemistry-based
+            simulation, advanced process control and optimization, IoT and connectivity, analytics
+            and machine learning, and a web portal to deliver our digital services.
           </p>
           <ul>
             <li>Software development tasks in an agile development team using .NET technologies</li>
             <li>Designing and architecting solutions together with your team members</li>
             <li>
-              Working together with the users to build the best possible simulation tool for their
-              known and unknown needs
-            </li>
-            <li>
               Work on the simulation engine that drives our future digital solutions for training,
               forecasting and optimization
+            </li>
+            <li>
+              Working together with the users to build the best possible simulation tool for their
+              known and unknown needs
             </li>
           </ul>
           <p>
             <strong>We offer you</strong>
           </p>
           <ul>
+            <li>A diverse team full of skills and passion, ready to support you at every turn</li>
             <li>
-              A diverse team of full of skills and passion, ready to support you at every turn
+              A global environment in a company that provides leading technologies and services for
+              the sustainable use of Earth’s natural resources
             </li>
             <li>
-              A global environment in a world’s leading company in minerals and metals processing
-              technology
-            </li>
-            <li>
-              Agility within a large corporation, small enough to feel like home, large enough to
+              Agility within a large corporation – small enough to feel like home, large enough to
               have impact
             </li>
-            <li>A chance to contribute to the ways of working</li>
+            <li>A chance to contribute to our ways of working</li>
             <li>
               Opportunities and time to learn, grow and develop yourself with training, courses,
-              seminars, books or real project work
+              seminars, books and real project work
             </li>
             <li>
-              An environment where trying out new things and roles are encouraged; be it
+              An environment where trying out new things and roles are encouraged – be it
               experimenting with new technologies or taking on tasks in new projects
             </li>
             <li>Flexibility of work</li>
-            <li>
-              Possibility to participate in the success of the company through the Outotec share
-              incentive program
-            </li>
           </ul>
           <p>
             <strong>We appreciate</strong>
@@ -472,8 +454,8 @@ const IndexPage = () => {
             <li>Real interest in solving challenges and taking pride in the products you build</li>
             <li>Hands-on experience and experimentation in diverse technologies</li>
             <li>
-              You to express your own opinions and justify them, to support decisions and evolve how
-              we work as a team
+              Skills and willingness to express your own opinions and to justify them, for
+              supporting decision making and developing the ways we work as a team
             </li>
             <li>
               Learning and experimentation as a habit to develop and adapt to the changing
@@ -491,43 +473,6 @@ const IndexPage = () => {
             in our quest!
           </p>
         </Position>
-
-        {/* 
-        <Position title={'Senior Software Developer, Espoo'}>
-          <p>
-            We are a software development team, building digital solutions for Outotec customers
-            around the globe. In practice, this means enabling sensors in machines, automated
-            plants, and building remote support systems for our maintenance.
-          </p>
-          <p>
-            We are a software development team, building digital solutions for Outotec customers
-            around the globe. In practice, this means enabling sensors in machines, automated
-            plants, and building remote support systems for our maintenance.
-          </p>
-          <p>
-            We are a software development team, building digital solutions for Outotec customers
-            around the globe. In practice, this means enabling sensors in machines, automated
-            plants, and building remote support systems for our maintenance.
-          </p>
-        </Position>
-        <Position title={'UX Designer, Espoo'}>
-          <p>
-            We are a software development team, building digital solutions for Outotec customers
-            around the globe. In practice, this means enabling sensors in machines, automated
-            plants, and building remote support systems for our maintenance.
-          </p>
-          <p>
-            We are a software development team, building digital solutions for Outotec customers
-            around the globe. In practice, this means enabling sensors in machines, automated
-            plants, and building remote support systems for our maintenance.
-          </p>
-          <p>
-            We are a software development team, building digital solutions for Outotec customers
-            around the globe. In practice, this means enabling sensors in machines, automated
-            plants, and building remote support systems for our maintenance.
-          </p>
-        </Position>
-        */}
       </Positions>
 
       <ContactForm imageData={imageData.contact.childImageSharp.fluid}>

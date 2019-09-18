@@ -329,6 +329,7 @@ class ContactForm extends React.Component {
                           <ConsentLabel htmlFor="consent">
                             Yes, I give the consent to Outotec to store and use my contact
                             information to respond to my inquiry
+                            <Message>{errors.consent && touched.consent && errors.consent}</Message>
                             <p>
                               We respect your privacy, information is collected and processed
                               according to{' '}
@@ -341,7 +342,6 @@ class ContactForm extends React.Component {
                               </a>
                             </p>
                           </ConsentLabel>
-                          <Message>{errors.consent && touched.consent && errors.consent}</Message>
                         </Field>
                         <Field>
                           <FormButton type="submit" disabled={isSubmitting} as="button">

@@ -157,7 +157,7 @@ const IndexPage = () => {
             together (for real)
           </li>
           <li>
-            An environment where trying out new things and roles are encouraged; be it{' '}
+            An environment where trying out new things and roles are encouraged - be it{' '}
             <strong>experimenting</strong> with new technologies or taking on tasks in new projects
           </li>
         </ul>
@@ -480,7 +480,7 @@ const IndexPage = () => {
         <h2>// Swing by for a visit</h2>
         <p>
           If this sounds like something you might be interested in, drop by for a casual chat about
-          tech and design. We don’t have bean bags but we got beer. And coke. We got coffee and tea
+          tech and design. We don’t have bean bags but we got beer. And Coke. We got coffee and tea
           too. And cookies. No pressure.
         </p>
         <p>

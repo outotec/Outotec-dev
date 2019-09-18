@@ -98,7 +98,11 @@ const FormContainer = styled.div`
   padding-bottom: 1px;
   width: auto;
   background-color: ${colors.accent1};
-
+  margin-bottom: 0;
+  transition: margin-bottom 0.5s ease;
+  ${media.lg} {
+    ${props => props.collapsed && 'margin-bottom: 6rem;'}
+  }
   ${media.xl} {
     float: right;
   }
@@ -223,7 +227,7 @@ class ContactForm extends React.Component {
         </Row>
         <Row>
           <FormCol xs={12} md={10} lg={6} mdOffset={1} lgOffset={3} xlOffset={2} xl={6}>
-            <FormContainer>
+            <FormContainer collapsed={this.state.status === 'SUBMITTED'}>
               <AnimateHeight duration={500} height={this.state.status !== 'SUBMITTED' ? 'auto' : 0}>
                 {
                   <Formik

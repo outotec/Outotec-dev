@@ -112,7 +112,11 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" description="" meta="" />
+      <SEO
+        title="Sustainable use of earth's natural resources - Outotec"
+        description="We provide leading process technologies and services for metals and mining, industrial water treatment, alternative energy, and chemical industries."
+        meta=""
+      />
       <Hero imageData={imageData.hero.childImageSharp.fluid}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>
@@ -145,7 +149,7 @@ const IndexPage = () => {
             <strong>Latest tech</strong> and modern practices
           </li>
           <li>
-            <strong>Co-creation</strong> for identifying new ideas and refining them into concepts, 
+            <strong>Co-creation</strong> for identifying new ideas and refining them into concepts,
             prototypes and solutions together with customers and users
           </li>
           <li>
@@ -154,7 +158,7 @@ const IndexPage = () => {
           </li>
           <li>
             An environment where trying out new things and roles are encouraged; be it{' '}
-            <strong>experimenting</strong> with new technologies or taking on tasks in new projects 
+            <strong>experimenting</strong> with new technologies or taking on tasks in new projects
           </li>
         </ul>
       </ImageTextSection>
@@ -307,83 +311,187 @@ const IndexPage = () => {
       <Positions>
         <Position title={'Lead Cloud Developer, Espoo'}>
           <p>
-            We are looking for new lead developer to join our cloud-based customer portal development team. The portal is the main interface for our customers to access information such as documentation, spare part information and service requests, but it also acts as the delivery channel more advanced content such as asset health analytics, digital twin simulators or training environments.
+            We are looking for new lead developer to join our cloud-based customer portal
+            development team. The portal is the main interface for our customers to access
+            information such as documentation, spare part information and service requests, but it
+            also acts as the delivery channel more advanced content such as asset health analytics,
+            digital twin simulators or training environments.
           </p>
           <p>
-            The customer portal is developed in the Outotec Digital Solutions Platform where we create factories of the future together with our customers. We are a team of over thirty software professionals focused on solving real-world challenges to improve safety, performance and sustainability of our customers’ operations. We use a multitude of different technologies such as machine vision, physics and chemistry-based simulation, advanced process control and optimization, IoT and connectivity, analytics and machine learning, and a web portal to deliver our digital services.
+            The customer portal is developed in the Outotec Digital Solutions Platform where we
+            create factories of the future together with our customers. We are a team of over thirty
+            software professionals focused on solving real-world challenges to improve safety,
+            performance and sustainability of our customers’ operations. We use a multitude of
+            different technologies such as machine vision, physics and chemistry-based simulation,
+            advanced process control and optimization, IoT and connectivity, analytics and machine
+            learning, and a web portal to deliver our digital services.
           </p>
-          <p><strong>What awaits you</strong></p>
+          <p>
+            <strong>What awaits you</strong>
+          </p>
           <ul>
-            <li>Demanding software development tasks in the multiple facets of the customer portal, frontend, backend, API’s, access management, component libraries</li>
+            <li>
+              Demanding software development tasks in the multiple facets of the customer portal,
+              frontend, backend, API’s, access management, component libraries
+            </li>
             <li>Lead role in architecture design and technology decisions</li>
-            <li>Close collaboration with the product owner and the multiple stakeholders of the portal</li>
-            <li>An architect role also outside the portal team as a specialist in cloud technologies</li>
+            <li>
+              Close collaboration with the product owner and the multiple stakeholders of the portal
+            </li>
+            <li>
+              An architect role also outside the portal team as a specialist in cloud technologies
+            </li>
           </ul>
-          <p><strong>We offer you</strong></p>
+          <p>
+            <strong>We offer you</strong>
+          </p>
           <ul>
-            <li>A diverse team of full of skills and passion, ready to support you at every turn</li>
-            <li>A global environment in a world’s leading company in minerals and metals processing technology</li>
-            <li>Agility within a large corporation, small enough to feel like home, large enough to have impact</li>
+            <li>
+              A diverse team of full of skills and passion, ready to support you at every turn
+            </li>
+            <li>
+              A global environment in a world’s leading company in minerals and metals processing
+              technology
+            </li>
+            <li>
+              Agility within a large corporation, small enough to feel like home, large enough to
+              have impact
+            </li>
             <li>A chance to contribute to the ways of working</li>
-            <li>Opportunities and time to learn, grow and develop yourself with training, courses, seminars, books or real project work</li>
-            <li>An environment where trying out new things and roles are encouraged; be it experimenting with new technologies or taking on tasks in new projects</li>
+            <li>
+              Opportunities and time to learn, grow and develop yourself with training, courses,
+              seminars, books or real project work
+            </li>
+            <li>
+              An environment where trying out new things and roles are encouraged; be it
+              experimenting with new technologies or taking on tasks in new projects
+            </li>
             <li>Flexibility of work</li>
-            <li>Possibility to participate in the success of the company through the Outotec share incentive program</li>
+            <li>
+              Possibility to participate in the success of the company through the Outotec share
+              incentive program
+            </li>
           </ul>
-          <p><strong>We appreciate</strong></p>
+          <p>
+            <strong>We appreciate</strong>
+          </p>
           <ul>
-            <li>Work history with developing and architecting complex systems with cloud platforms and web technologies, especially Azure, TypeScript, C# and React</li>
+            <li>
+              Work history with developing and architecting complex systems with cloud platforms and
+              web technologies, especially Azure, TypeScript, C# and React
+            </li>
             <li>Experience in developing commercial products in the industrial sector</li>
             <li>Real interest in solving challenges and taking pride in the products you build</li>
             <li>Hands-on experience and experimentation in diverse technologies</li>
-            <li>You to express your own opinions and justify them, to support decisions and evolve how we work as a team</li>
-            <li>Learning and experimentation as a habit to develop and adapt to the changing environment</li>
+            <li>
+              You to express your own opinions and justify them, to support decisions and evolve how
+              we work as a team
+            </li>
+            <li>
+              Learning and experimentation as a habit to develop and adapt to the changing
+              environment
+            </li>
             <li>Activity in local developer or open source communities</li>
           </ul>
           <p>
-            We want to make the world a better place by enabling our customers to produce minerals and metals as efficiently as possible while minimizing the environmental impact! Join us in our quest!
+            We want to make the world a better place by enabling our customers to produce minerals
+            and metals as efficiently as possible while minimizing the environmental impact! Join us
+            in our quest!
           </p>
         </Position>
         <Position title={'Software Developer, Pori'}>
           <p>
-            We are looking for new talent to join our development team for HSC Chemistry at our Pori Research Center. HSC is the main element of our modeling and simulation solutions and is the basis for Outotec engineers to design processes and dimension equipment for mineral and metals processing plants. More and more we are also exploiting the technology to create digital twins of the processing plants for training, forecasting and optimizing the operations.          </p>
-          <p>
-            Modeling and simulation is part of the Outotec Digital Solutions Platform where we create factories of the future together with our customers. We are a team of over thirty software professionals focused on solving real-world challenges to improve safety, performance and sustainability of our customers’ operations. We use a multitude of different technologies such as machine vision, physics and chemistry-based simulation, advanced process control and optimization, IoT and connectivity, analytics and machine learning, and a web portal to deliver our digital services.
+            We are looking for new talent to join our development team for HSC Chemistry at our Pori
+            Research Center. HSC is the main element of our modeling and simulation solutions and is
+            the basis for Outotec engineers to design processes and dimension equipment for mineral
+            and metals processing plants. More and more we are also exploiting the technology to
+            create digital twins of the processing plants for training, forecasting and optimizing
+            the operations.{' '}
           </p>
-          <p><strong>What awaits you</strong></p>
+          <p>
+            Modeling and simulation is part of the Outotec Digital Solutions Platform where we
+            create factories of the future together with our customers. We are a team of over thirty
+            software professionals focused on solving real-world challenges to improve safety,
+            performance and sustainability of our customers’ operations. We use a multitude of
+            different technologies such as machine vision, physics and chemistry-based simulation,
+            advanced process control and optimization, IoT and connectivity, analytics and machine
+            learning, and a web portal to deliver our digital services.
+          </p>
+          <p>
+            <strong>What awaits you</strong>
+          </p>
           <ul>
             <li>Software development tasks in an agile development team using .NET technologies</li>
             <li>Designing and architecting solutions together with your team members</li>
-            <li>Working together with the users to build the best possible simulation tool for their known and unknown needs</li>
-            <li>Work on the simulation engine that drives our future digital solutions for training, forecasting and optimization</li>
+            <li>
+              Working together with the users to build the best possible simulation tool for their
+              known and unknown needs
+            </li>
+            <li>
+              Work on the simulation engine that drives our future digital solutions for training,
+              forecasting and optimization
+            </li>
           </ul>
-          <p><strong>We offer you</strong></p>
+          <p>
+            <strong>We offer you</strong>
+          </p>
           <ul>
-            <li>A diverse team of full of skills and passion, ready to support you at every turn</li>
-            <li>A global environment in a world’s leading company in minerals and metals processing technology</li>
-            <li>Agility within a large corporation, small enough to feel like home, large enough to have impact</li>
+            <li>
+              A diverse team of full of skills and passion, ready to support you at every turn
+            </li>
+            <li>
+              A global environment in a world’s leading company in minerals and metals processing
+              technology
+            </li>
+            <li>
+              Agility within a large corporation, small enough to feel like home, large enough to
+              have impact
+            </li>
             <li>A chance to contribute to the ways of working</li>
-            <li>Opportunities and time to learn, grow and develop yourself with training, courses, seminars, books or real project work</li>
-            <li>An environment where trying out new things and roles are encouraged; be it experimenting with new technologies or taking on tasks in new projects</li>
+            <li>
+              Opportunities and time to learn, grow and develop yourself with training, courses,
+              seminars, books or real project work
+            </li>
+            <li>
+              An environment where trying out new things and roles are encouraged; be it
+              experimenting with new technologies or taking on tasks in new projects
+            </li>
             <li>Flexibility of work</li>
-            <li>Possibility to participate in the success of the company through the Outotec share incentive program</li>
+            <li>
+              Possibility to participate in the success of the company through the Outotec share
+              incentive program
+            </li>
           </ul>
-          <p><strong>We appreciate</strong></p>
+          <p>
+            <strong>We appreciate</strong>
+          </p>
           <ul>
             <li>Work history with .NET or C++ applications</li>
             <li>Familiarity with cloud platforms, web technologies and architecture</li>
             <li>Experience in developing commercial products in the industrial sector</li>
             <li>Real interest in solving challenges and taking pride in the products you build</li>
             <li>Hands-on experience and experimentation in diverse technologies</li>
-            <li>You to express your own opinions and justify them, to support decisions and evolve how we work as a team</li>
-            <li>Learning and experimentation as a habit to develop and adapt to the changing environment</li>
-            <li>Knowledge of chemistry, physics or mathematics is not required, but basic understanding can help when implementing more advanced algorithms or when interacting with technology advisors</li>
+            <li>
+              You to express your own opinions and justify them, to support decisions and evolve how
+              we work as a team
+            </li>
+            <li>
+              Learning and experimentation as a habit to develop and adapt to the changing
+              environment
+            </li>
+            <li>
+              Knowledge of chemistry, physics or mathematics is not required, but basic
+              understanding can help when implementing more advanced algorithms or when interacting
+              with technology advisors
+            </li>
           </ul>
           <p>
-            We want to make the world a better place by enabling our customers to produce minerals and metals as efficiently as possible while minimizing the environmental impact! Join us in our quest!
+            We want to make the world a better place by enabling our customers to produce minerals
+            and metals as efficiently as possible while minimizing the environmental impact! Join us
+            in our quest!
           </p>
         </Position>
-        
+
         {/* 
         <Position title={'Senior Software Developer, Espoo'}>
           <p>

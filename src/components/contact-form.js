@@ -134,13 +134,14 @@ const ImageCol = styled(Col)`
 `;
 
 const StyledImage = styled(BackgroundImage)`
-  background-position: left center;
+  background-position: center;
   ${media.md} {
     height: 400px;
+    max-width: 600px;
   }
   ${media.xl} {
-    width: 22.5rem;
-    height: 35.625rem;
+    width: 21.5rem;
+    height: 29.625rem;
   }
   width: 100%;
   height: 300px;

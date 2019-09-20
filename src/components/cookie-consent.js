@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from './container';
 import { Row, Col } from 'react-flexbox-grid';
 import Button from '../components/button';
@@ -55,13 +55,21 @@ const CookieContentCol = styled(Col)`
 const CookieConsent = () => {
   const [accepted, setAccepted] = useState(false);
   const acceptCookies = () => {
-    Cookies.set(cookieKey, 'true');
     setAccepted(true);
+    Cookies.set(cookieKey, 'true', { expires: 365 });
   };
-  const acceptedFromCookie = Cookies.get(cookieKey);
+
+  useEffect(() => {
+    setAccepted(!!Cookies.get(cookieKey));
+  }, []);
+  const isSSR = typeof window === `undefined`;
+
+  if (isSSR) {
+    return <></>;
+  }
 
   return (
-    <StyledCookieConsent hide={acceptedFromCookie || accepted}>
+    <StyledCookieConsent hide={accepted} data-accepted={accepted}>
       <Container>
         <Row>
           <CookieContentCol xs={12} sm={7}>

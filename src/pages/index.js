@@ -79,7 +79,7 @@ const IndexPage = () => {
           }
         }
       }
-      jaakko: file(relativePath: { eq: "jaakko-2.jpg" }) {
+      jaakko: file(relativePath: { eq: "jaakko_bw.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -100,9 +100,9 @@ const IndexPage = () => {
           }
         }
       }
-      contact: file(relativePath: { eq: "jussi-j-2.jpg" }) {
+      contact: file(relativePath: { eq: "jussi_bw.jpg" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 700) {
+          fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
@@ -157,7 +157,7 @@ const IndexPage = () => {
             together (for real)
           </li>
           <li>
-            An environment where trying out new things and roles are encouraged; be it{' '}
+            An environment where trying out new things and roles are encouraged - be it{' '}
             <strong>experimenting</strong> with new technologies or taking on tasks in new projects
           </li>
         </ul>
@@ -325,6 +325,9 @@ const IndexPage = () => {
             and machine learning, and a web portal to enable development and delivery of Outotec’s
             digital services.
           </p>
+          <p>
+            <strong>What awaits you</strong>
+          </p>
           <ul>
             <li>
               Lead role in architecture design and technology decisions regarding the customer
@@ -333,7 +336,7 @@ const IndexPage = () => {
             <li>Close collaboration with the product owner and the multiple stakeholders</li>
             <li>
               Demanding software development tasks in the frontend, backend, API’s, access
-              management, component libraries, etc.
+              management, component libraries, etc., using Azure services, TypeScript, C# and React.js
             </li>
             <li>An architect role outside the portal team as a specialist in cloud technologies</li>
           </ul>
@@ -367,7 +370,7 @@ const IndexPage = () => {
           <ul>
             <li>
               Work history with developing and architecting complex systems with cloud platforms and
-              web technologies, especially Azure, TypeScript, C# and React
+              web technologies, especially Azure, TypeScript, C# and React.js
             </li>
             <li>Experience in developing commercial products in the industrial sector</li>
             <li>Real interest in solving challenges and taking pride in the products you build</li>
@@ -394,11 +397,7 @@ const IndexPage = () => {
             <a href="http://www.outotec.com/HSC" target="_blank" rel="noopener noreferrer">
               HSC Chemistry
             </a>{' '}
-            at our Pori Research Center. HSC is the main element of our modeling and simulation
-            solutions and is the basis for Outotec engineers to design processes and dimension
-            equipment for mineral and metals processing plants. More and more we are also exploiting
-            the technology to create digital twins of the processing plants for training,
-            forecasting and optimizing the operations.
+            at our Pori Research Center. HSC is a unique Windows software package of databases, calculation routines and tools for modeling and simulating chemical, thermodynamic and mineral processes. It is the basis for Outotec engineers to research and design processes, dimension equipment for mineral and metals processing plants, as well as assessing their environmental footprint. As of lately, the powerful dynamic simulation engine is also used to create digital twins of processing plants for training, forecasting and optimizing operations in real time.
           </p>
           <p>
             Modeling and simulation is part of Outotec’s Digital Solutions Platform – a team of over
@@ -408,12 +407,15 @@ const IndexPage = () => {
             simulation, advanced process control and optimization, IoT and connectivity, analytics
             and machine learning, and a web portal to deliver our digital services.
           </p>
+          <p>
+            <strong>What awaits you</strong>
+          </p>
           <ul>
-            <li>Software development tasks in an agile development team using .NET technologies</li>
+            <li>
+              Software development of the calculation modules and user interfaces in an agile development team using .NET technology for Windows applications</li>
             <li>Designing and architecting solutions together with your team members</li>
             <li>
-              Work on the simulation engine that drives our future digital solutions for training,
-              forecasting and optimization
+              Work on the engine that drives our future simulation-based digital solutions for training, forecasting and optimization
             </li>
             <li>
               Working together with the users to build the best possible simulation tool for their
@@ -448,7 +450,9 @@ const IndexPage = () => {
             <strong>We appreciate</strong>
           </p>
           <ul>
-            <li>Work history with .NET or C++ applications</li>
+            <li>
+              Work history in developing Windows desktop applications, preferably with .NET technologies
+            </li>
             <li>Familiarity with cloud platforms, web technologies and architecture</li>
             <li>Experience in developing commercial products in the industrial sector</li>
             <li>Real interest in solving challenges and taking pride in the products you build</li>
@@ -480,7 +484,7 @@ const IndexPage = () => {
         <h2>// Swing by for a visit</h2>
         <p>
           If this sounds like something you might be interested in, drop by for a casual chat about
-          tech and design. We don’t have bean bags but we got beer. And coke. We got coffee and tea
+          tech and design. We don’t have bean bags but we got beer. And Coke. We got coffee and tea
           too. And cookies. No pressure.
         </p>
         <p>

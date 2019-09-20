@@ -16,7 +16,7 @@ import logo from '../images/Outotec-Logo.svg';
 import slogan from '../images/outotec-slogan.svg';
 import xPattern from '../images/x-pattern.svg';
 import media from '../styles/media';
-// import CookieConsent from '../components/cookie-consent';
+import CookieConsent from '../components/cookie-consent';
 const StyledLayout = styled.div``;
 
 const PatternBackground = styled.div`
@@ -110,7 +110,7 @@ const Layout = ({ children }) => {
           </div>
         </FooterContainer>
       </StyledFooter>
-      {/* <CookieConsent /> */}
+      <CookieConsent />
       <GlobalStyles />
     </StyledLayout>
   );

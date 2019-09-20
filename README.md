@@ -6,9 +6,9 @@
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install dependencies.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Install the needed node modules for the project to work.
 
     ```sh
     npm install

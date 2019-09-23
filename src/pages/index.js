@@ -113,8 +113,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Sustainable use of earth's natural resources - Outotec"
-        description="We provide leading process technologies and services for metals and mining, industrial water treatment, alternative energy, and chemical industries."
+        title="Digital development and design @ Outotec"
+        description="Join us to build the digital future for the sustainable use of Earth’s natural resources!"
         meta=""
       />
       <Hero imageData={imageData.hero.childImageSharp.fluid}>

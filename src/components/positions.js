@@ -21,11 +21,11 @@ class Positions extends React.Component {
     return (
       <PositionContainer>
         <Row>
-          <Col sm={12} md={10} mdOffset={1}>
+          <Col id="positions" sm={12} md={10} mdOffset={1}>
             <StaticQuery
               query={graphql`
                 query {
-                  desktop: file(relativePath: { eq: "ors.png" }) {
+                  desktop: file(relativePath: { eq: "ocs2.jpg" }) {
                     childImageSharp {
                       fluid(quality: 90, maxWidth: 1000) {
                         ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -39,7 +39,7 @@ class Positions extends React.Component {
               )}
             />
             {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-            <h2 id="positions">// We're looking for</h2>
+            <h2>// We're looking for</h2>
           </Col>
         </Row>
         <Row>{children}</Row>

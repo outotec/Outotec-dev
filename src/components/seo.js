@@ -24,7 +24,7 @@ function SEO({ description, lang, meta, title }) {
         }
         ogImage: file(relativePath: { eq: "og-image.jpg" }) {
           childImageSharp {
-            fixed {
+            fixed(width: 1200, quality: 90) {
               src
             }
           }

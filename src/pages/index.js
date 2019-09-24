@@ -336,7 +336,8 @@ const IndexPage = () => {
             <li>Close collaboration with the product owner and the multiple stakeholders</li>
             <li>
               Demanding software development tasks in the frontend, backend, API’s, access
-              management, component libraries, etc., using Azure services, TypeScript, C# and React.js
+              management, component libraries, etc., using Azure services, TypeScript, C# and
+              React.js
             </li>
             <li>An architect role outside the portal team as a specialist in cloud technologies</li>
           </ul>
@@ -397,7 +398,13 @@ const IndexPage = () => {
             <a href="http://www.outotec.com/HSC" target="_blank" rel="noopener noreferrer">
               HSC Chemistry
             </a>{' '}
-            at our Pori Research Center. HSC is a unique Windows software package of databases, calculation routines and tools for modeling and simulating chemical, thermodynamic and mineral processes. It is the basis for Outotec engineers to research and design processes, dimension equipment for mineral and metals processing plants, as well as assessing their environmental footprint. As of lately, the powerful dynamic simulation engine is also used to create digital twins of processing plants for training, forecasting and optimizing operations in real time.
+            at our Pori Research Center. HSC is a unique Windows software package of databases,
+            calculation routines and tools for modeling and simulating chemical, thermodynamic and
+            mineral processes. It is the basis for Outotec engineers to research and design
+            processes, dimension equipment for mineral and metals processing plants, as well as
+            assessing their environmental footprint. As of lately, the powerful dynamic simulation
+            engine is also used to create digital twins of processing plants for training,
+            forecasting and optimizing operations in real time.
           </p>
           <p>
             Modeling and simulation is part of Outotec’s Digital Solutions Platform – a team of over
@@ -412,10 +419,13 @@ const IndexPage = () => {
           </p>
           <ul>
             <li>
-              Software development of the calculation modules and user interfaces in an agile development team using .NET technology for Windows applications</li>
+              Software development of the calculation modules and user interfaces in an agile
+              development team using .NET technology for Windows applications
+            </li>
             <li>Designing and architecting solutions together with your team members</li>
             <li>
-              Work on the engine that drives our future simulation-based digital solutions for training, forecasting and optimization
+              Work on the engine that drives our future simulation-based digital solutions for
+              training, forecasting and optimization
             </li>
             <li>
               Working together with the users to build the best possible simulation tool for their
@@ -451,7 +461,8 @@ const IndexPage = () => {
           </p>
           <ul>
             <li>
-              Work history in developing Windows desktop applications, preferably with .NET technologies
+              Work history in developing Windows desktop applications, preferably with .NET
+              technologies
             </li>
             <li>Familiarity with cloud platforms, web technologies and architecture</li>
             <li>Experience in developing commercial products in the industrial sector</li>

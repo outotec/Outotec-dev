@@ -9,9 +9,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import config from '../utils/config';
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, ogImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -21,12 +22,19 @@ function SEO({ description, lang, meta, title }) {
             author
           }
         }
+        ogImage: file(relativePath: { eq: "og-image.jpg" }) {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     `,
   );
 
   const metaDescription = description || site.siteMetadata.description;
-
+  const metaImgSrc = `${config.GATSBY_BASE_URL}${ogImage.childImageSharp.fixed.src}`;
   return (
     <Helmet
       htmlAttributes={{
@@ -48,6 +56,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: metaImgSrc,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
@@ -62,6 +74,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: `twitter:image`,
+          content: metaImgSrc,
         },
         {
           name: `twitter:description`,

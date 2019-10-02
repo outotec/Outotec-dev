@@ -135,8 +135,12 @@ const IndexPage = () => {
         <h2>// What we offer you</h2>
         <ul>
           <li>
-            Opportunity to have a <strong>real impact</strong> by helping our customers use Earth’s
-            natural resources in a more <strong>sustainable way</strong>
+            Opportunity at{' '}
+            <a 
+              href="https://www.outotec.com/" target="_blank" rel="noopener noreferrer"
+            >
+              Outotec
+            </a> to have a <strong>real impact</strong> by helping mining, mineral and metals companies use Earth’s natural resources in a more <strong>sustainable way</strong>
           </li>
           <li>
             Work on products, that <strong>shape entire industries</strong> through digitalization
@@ -169,41 +173,38 @@ const IndexPage = () => {
 
         <p>
           We have three main solution areas with ownership to develop solutions using the latest
-          technologies to meet end-user needs and business opportunities:
+          technologies to meet end-user needs and business opportunities.
         </p>
 
         <ol>
           <li>
-            <strong>Intelligent Automation</strong> - Real-time systems and tools that automatically
-            sense, think and control
+            <strong>Intelligent Automation</strong> - Real-time systems for advanced measurements, process control and optimization, reporting and remote support of operations
           </li>
           <li>
-            <strong>Digital Services</strong> - Connected customers enjoying our services in the
-            physical and digital
+            <strong>Digital Services</strong> - Cloud-based systems for providing digital content and services for customer engagement, real-time insight into assets and processes with connectivity, analytics and simulations
           </li>
           <li>
-            <strong>Modeling and Simulation</strong> - Digitizing our process technology and knowhow
-            with chemistry and metallurgy
+            <strong>Modeling and Simulation</strong> - Tools for modeling and simulating chemical, metallurgical and mineral processes to design plants and analyze their performance, costs and environmental footprint
           </li>
         </ol>
         <p>
-          Join us to{' '}
-          <a
+          See more about Outotec's digitalization
+          <br/>
+          → <a
             href="https://www.outotec.com/explore/digitalization/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            refine data to redefine our industry
-          </a>{' '}
-          and advance sustainability with{' '}
-          <a
+            Refining data - redefining our industry
+          </a>
+          <br/>
+          → <a
             href="https://www.outotec.com/sustainability-report/2017/our-agenda/refining-data-for-sustainability/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            digitalization
+            Refining data for sustainability
           </a>
-          .
         </p>
       </ImageTextSection>
 
@@ -235,7 +236,7 @@ const IndexPage = () => {
           vision system that’s been tried for 30 years.”
         </h4>
         <p>
-          Jaakko Palokangas
+          <strong>Jaakko Palokangas</strong>
           <br />
           Team lead, Intelligent Automation
         </p>
@@ -271,10 +272,7 @@ const IndexPage = () => {
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// Your team</h2>
         <p>
-          We are a software development team, building digital solutions for Outotec customers
-          around the globe. We create advanced sensors for our machines, automate and simulate our
-          processes, connect them all to the cloud to enable analytics, machine learning and digital
-          twin solutions.
+          We are a software development team of over thirty software professionals, building digital solutions for Outotec customers around the globe. We create advanced sensors for our machines, automate and simulate our processes, connect them all to the cloud to enable analytics, machine learning and digital twin solutions.
         </p>
         <p>
           Bit by bit, we bring modern software and design practices to a relatively conservative
@@ -309,12 +307,15 @@ const IndexPage = () => {
       </ImageTextSection>
 
       <Positions>
-        <Position title={'Lead Cloud Developer, Espoo'}>
+        <Position title={'Lead Cloud Developer'}>
           <p>
-            We are looking for new lead developer to join our customer portal development team. The
-            cloud-based portal will offer asset analytics, digital twins or virtual training
-            environments, and access to information such as documents, spare part catalogs and
-            service requests to our customers.
+            We are looking for new lead developer to join our customer portal development team at{' '}
+            <a 
+              href="https://goo.gl/maps/7NYQUQNNr9txc82j9" target="_blank" rel="noopener noreferrer"
+            >
+              Outotec HQ in Espoo, Finland
+            </a>
+            . The cloud-based portal will offer asset analytics, digital twins or virtual training environments, and access to information such as documents, spare part catalogs and service requests to our customers.
           </p>
           <p>
             The customer portal is developed as part of Outotec’s Digital Solutions Platform – a
@@ -336,8 +337,7 @@ const IndexPage = () => {
             <li>Close collaboration with the product owner and the multiple stakeholders</li>
             <li>
               Demanding software development tasks in the frontend, backend, API’s, access
-              management, component libraries, etc., using Azure services, TypeScript, C# and
-              React.js
+              management, component libraries, etc., using Azure services, Node.js, C#, TypeScript and React.js
             </li>
             <li>An architect role outside the portal team as a specialist in cloud technologies</li>
           </ul>
@@ -360,8 +360,7 @@ const IndexPage = () => {
               seminars, books and real project work
             </li>
             <li>
-              An environment where trying out new things and roles are encouraged – be it
-              experimenting with new technologies or taking on tasks in new projects
+              An environment where trying out new things and roles are encouraged
             </li>
             <li>Flexibility of work</li>
           </ul>
@@ -392,19 +391,19 @@ const IndexPage = () => {
             in our quest!
           </p>
         </Position>
-        <Position title={'.NET Developer, Pori'}>
+        <Position title={'.NET Developer'}>
           <p>
             We are looking for new talent to join our development team for{' '}
             <a href="http://www.outotec.com/HSC" target="_blank" rel="noopener noreferrer">
               HSC Chemistry
             </a>{' '}
-            at our Pori Research Center. HSC is a unique Windows software package of databases,
-            calculation routines and tools for modeling and simulating chemical, thermodynamic and
-            mineral processes. It is the basis for Outotec engineers to research and design
-            processes, dimension equipment for mineral and metals processing plants, as well as
-            assessing their environmental footprint. As of lately, the powerful dynamic simulation
-            engine is also used to create digital twins of processing plants for training,
-            forecasting and optimizing operations in real time.
+            at our{' '}
+            <a
+              href="https://goo.gl/maps/VrHRmTNDXJE7a5hH9" target="_blank" rel="noopener noreferrer"
+            >
+              Pori Research Center, Finland
+            </a>
+            . HSC is a unique Windows software package for modeling and simulation of chemical, metallurgical and mineral processing technologies. It is the basic tool to design processing plants and analyze their performance, costs and environmental footprint. The same powerful simulation engine may also be used to create digital twins to optimize process operation, make predictions and train operators.
           </p>
           <p>
             Modeling and simulation is part of Outotec’s Digital Solutions Platform – a team of over
@@ -425,7 +424,7 @@ const IndexPage = () => {
             <li>Designing and architecting solutions together with your team members</li>
             <li>
               Work on the engine that drives our future simulation-based digital solutions for
-              training, forecasting and optimization
+              training, prediction and optimization
             </li>
             <li>
               Working together with the users to build the best possible simulation tool for their
@@ -451,8 +450,7 @@ const IndexPage = () => {
               seminars, books and real project work
             </li>
             <li>
-              An environment where trying out new things and roles are encouraged – be it
-              experimenting with new technologies or taking on tasks in new projects
+              An environment where trying out new things and roles are encouraged
             </li>
             <li>Flexibility of work</li>
           </ul>
@@ -461,13 +459,12 @@ const IndexPage = () => {
           </p>
           <ul>
             <li>
-              Work history in developing Windows desktop applications, preferably with .NET
-              technologies
+              Work history in developing commercial Windows desktop applications, preferably with .NET technologies
             </li>
-            <li>Familiarity with cloud platforms, web technologies and architecture</li>
-            <li>Experience in developing commercial products in the industrial sector</li>
+            <li>
+              Familiarity and experimentation with diverse technologies such as cloud platforms    and web technologies
+            </li>
             <li>Real interest in solving challenges and taking pride in the products you build</li>
-            <li>Hands-on experience and experimentation in diverse technologies</li>
             <li>
               Skills and willingness to express your own opinions and to justify them, for
               supporting decision making and developing the ways we work as a team
@@ -492,11 +489,9 @@ const IndexPage = () => {
 
       <ContactForm imageData={imageData.contact.childImageSharp.fluid}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-        <h2>// Swing by for a visit</h2>
+        <h2>// Let's talk</h2>
         <p>
-          If this sounds like something you might be interested in, drop by for a casual chat about
-          tech and design. We don’t have bean bags but we got beer. And Coke. We got coffee and tea
-          too. And cookies. No pressure.
+          If this sounds like something you might be interested in, leave us a note below and let's discuss more. We don't have bean bags, but we're always ready for a casual chat about tech or design over a beer. Or coffee. Or tea. With cookies even? Phone or e-mail work too. No pressure.
         </p>
         <p>
           <strong>Jussi Järvinen</strong>

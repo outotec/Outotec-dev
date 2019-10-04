@@ -45,7 +45,7 @@ const SeeMore = styled.div`
     width: 100%;
     height: 6.5rem;
     margin-top: -6.5rem;
-    background: linear-gradient(transparent 3rem, white 5.5rem);
+    background: linear-gradient(rgba(255, 255, 255, 0) 3rem, white 5.5rem);
   }
 `;
 

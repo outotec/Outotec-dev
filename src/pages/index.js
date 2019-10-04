@@ -214,7 +214,7 @@ const IndexPage = () => {
             <Row>
               <Col>
                 <p>Would you like to chat about tech or design over a cup of coffee?</p>
-                <Button onClick={() => scroller.scrollTo('contact', { smooth: true })}>
+                <Button onClick={() => scroller.scrollTo('contact', { smooth: true, offset: -16 })}>
                   Sure thing!
                 </Button>
               </Col>

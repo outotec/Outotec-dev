@@ -19,7 +19,9 @@ const StyledHeader = styled.header`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <Container>
-      <LogoImg src={logo} alt="Outotec logo" />
+      <a href="https://www.outotec.com" target="_blank" rel="noopener noreferrer">
+        <LogoImg src={logo} alt="Outotec logo" />
+      </a>
     </Container>
   </StyledHeader>
 );

@@ -103,7 +103,9 @@ const Layout = ({ children }) => {
       <StyledFooter>
         <FooterContainer>
           <div>
-            <LogoImg src={logo} alt="Outotec logo" />
+            <a href="https://www.outotec.com" target="_blank" rel="noopener noreferrer">
+              <LogoImg src={logo} alt="Outotec logo" />
+            </a>
           </div>
           <div>
             <SloganImg src={slogan} />

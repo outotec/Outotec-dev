@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import { Col } from 'react-flexbox-grid';
 import plus from '../images/plus.svg';
 import minus from '../images/minus.svg';
+import { colors } from '../styles/constants';
 
 const PositionCol = styled(Col)`
   background-color: white;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 `;
-
 const Role = styled.div`
   img {
     display: inline-block;
@@ -31,7 +31,22 @@ const Description = styled.div`
   box-sizing: border-box;
   transition: max-height 0.5s ease;
   margin-top: -1rem;
-  ${props => !props.open && `max-height: 0px;`};
+  ${props => !props.open && `max-height: 6.5rem;`};
+`;
+const SeeMore = styled.div`
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+  cursor: pointer;
+  color: ${colors.accent1};
+  &:before {
+    content: '';
+    display: ${props => (props.open ? `none` : `block`)};
+    position: relative;
+    width: 100%;
+    height: 6.5rem;
+    margin-top: -6.5rem;
+    background: linear-gradient(transparent 3rem, white 5.5rem);
+  }
 `;
 
 class Position extends React.Component {
@@ -55,6 +70,11 @@ class Position extends React.Component {
           <h3>{title}</h3>
         </Role>
         <Description open={open}>{children}</Description>
+        {
+          open ? 
+            <SeeMore open={open} onClick={this.toggleOpen}>See less...</SeeMore> : 
+            <SeeMore open={open} onClick={this.toggleOpen}>See more...</SeeMore> 
+        }
       </PositionCol>
     );
   }

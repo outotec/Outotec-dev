@@ -39,6 +39,14 @@ const ChatBackgroundImage = styled(BackgroundImage)`
   background-position: 35% 50%;
 `;
 
+const Buttons = styled.div`
+  display: flex;
+  a {
+    margin: 2rem 3rem 2rem 0rem;
+    line-height: 1rem;
+  }
+`;
+
 const IndexPage = () => {
   const imageData = useStaticQuery(graphql`
     query {
@@ -390,6 +398,11 @@ const IndexPage = () => {
             and metals as efficiently as possible while minimizing the environmental impact! Join us
             in our quest!
           </p>
+          <Buttons>
+            <Button onClick={() => scroller.scrollTo('contact', { smooth: true, offset: -16 })}>
+              Let's talk!
+            </Button>
+          </Buttons>
         </Position>
         <Position title={'.NET Developer'}>
           <p>
@@ -484,6 +497,13 @@ const IndexPage = () => {
             and metals as efficiently as possible while minimizing the environmental impact! Join us
             in our quest!
           </p>
+          <Buttons>
+            <Button
+              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/FFBFB414EB1651C5C2258378002D9C11" target="_blank" rel="noopener noreferrer"
+            >
+              Apply now!
+            </Button>
+          </Buttons>
         </Position>
       </Positions>
 

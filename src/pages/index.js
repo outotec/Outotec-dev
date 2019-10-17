@@ -399,8 +399,10 @@ const IndexPage = () => {
             in our quest!
           </p>
           <Buttons>
-            <Button onClick={() => scroller.scrollTo('contact', { smooth: true, offset: -16 })}>
-              Let's talk!
+            <Button
+              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/EEA68E6D9CA8EB8FC225849500488A8A" target="_blank" rel="noopener noreferrer"
+            >
+              Apply now!
             </Button>
           </Buttons>
         </Position>

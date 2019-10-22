@@ -8,6 +8,7 @@ import { StaticQuery } from 'gatsby';
 const StyledImage = styled(BackgroundImage)`
   width: 100%;
   height: 300px;
+  ${props => props.hideImage && `height: 0px; margin-top: -50px`};
 `;
 
 const PositionContainer = styled(Container)`
@@ -17,7 +18,7 @@ const PositionContainer = styled(Container)`
 
 class Positions extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children, title, hideImage } = this.props;
     return (
       <PositionContainer>
         <Row>
@@ -35,11 +36,11 @@ class Positions extends React.Component {
                 }
               `}
               render={data => (
-                <StyledImage fluid={data.desktop.childImageSharp.fluid}></StyledImage>
+                <StyledImage fluid={data.desktop.childImageSharp.fluid} hideImage={hideImage}></StyledImage>
               )}
             />
             {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-            <h2>// We're looking for</h2>
+            <h2>// {title}</h2>
           </Col>
         </Row>
         <Row>{children}</Row>

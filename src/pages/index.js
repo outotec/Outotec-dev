@@ -314,8 +314,8 @@ const IndexPage = () => {
         </p>
       </ImageTextSection>
 
-      <Positions>
-        <Position title={'Lead Cloud Developer'}>
+      <Positions title={"We're looking for"}>
+        <Position title={"Lead Cloud Developer"}>
           <p>
             We are looking for new lead developer to join our customer portal development team at{' '}
             <a 
@@ -502,6 +502,83 @@ const IndexPage = () => {
           <Buttons>
             <Button
               href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/FFBFB414EB1651C5C2258378002D9C11" target="_blank" rel="noopener noreferrer"
+            >
+              Apply now!
+            </Button>
+          </Buttons>
+        </Position>
+      </Positions>
+
+      <Positions title={'Our friends are looking too...'} hideImage={true}>
+        <Position title={'Manager, Smelting Digitalization (Espoo, Finland)'}>
+          <p>
+            We are looking for a digitalization enthusiast who wants to make an impact in the metals processing industry. More specifically we are looking for a person who wants to join our team in developing our digital offerings for smelting technologies and work with customers to help them achieve results. As part of the Smelting Digitalization team working towards a vision of a Fully Automated Smelter you would be improving safety, environment and productivity at smelters globally. The roadmap is in place and we are in execution mode to reach that vision so we need you to work not only with our product managers but also with our digital solutions team, that is this brilliant bunch:{' '}
+            <a href="https://dev.outotec.com" target="_blank" rel="noopener noreferrer">
+              dev.outotec.com
+            </a>.
+          </p>
+          <p>
+            <strong>As Manager, Smelting Digitalization, you will:</strong>
+          </p>
+          <ul>
+            <li>
+              Plan, manage and monitor our Smelting Digitalization program together with our global team
+            </li>
+            <li>Develop initiatives and products based on customer needs</li>
+            <li>
+              Assist in refining the digitalization strategy for Smelting and lead multiple product development projects
+            </li>
+            <li>
+              Have an active sales &amp; marketing role for Digital Products, promoting early stage adoption of new technologies
+            </li>
+            <li>
+             Seek opportunities to advance work through customer collaboration to bring new products to market faster
+            </li>
+            <li>
+              Manage internal, customer and regulatory/design standard needs for Digitalization products
+            </li>
+          </ul>
+          <p>
+            <strong>To succeed, you will need:</strong>
+          </p>
+          <ul>
+            <li>
+              A M.Sc. degree in either Process Engineering or Automation with a deep interest in understanding or learning one or the other
+            </li>
+            <li>
+             Practical experience of metallurgical processes and/or plant automation and IT are considered a strength
+            </li>
+            <li>
+              Demonstrated solid understanding, development and commercialization of digital platform projects and system
+            </li>
+            <li>
+              Strong conceptual and strategic thinking at the program and portfolio level with attention to detail in tactical execution
+            </li>
+            <li>
+              Ability to convey technical details clearly to all levels and build customer rapport
+            </li>
+            <li>
+              Ability to self-manage and work as part of a team (local and virtual) and deliver multiple projects concurrently
+            </li>
+            <li>Excellent communication and presentation skills</li>
+            <li>Willingness for frequent, short term travel</li>
+          </ul>
+
+          <p>
+            <strong>For more information, please contact</strong>
+            <br />
+            <span>Mikael Jåfs</span>
+            <br />
+            <span>Director, Strategic Projects &amp; Innovations, Smelting</span>
+            <br />
+            <a href="tel:+358 50 359 9577">+358 50 359 9577</a>
+            <br />
+            <span>Best availability on Thursdays at 9 - 10 (EET)</span>
+          </p>
+
+          <Buttons>
+            <Button
+              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/5C0BD48F411377CBC22584880042B14E" target="_blank" rel="noopener noreferrer"
             >
               Apply now!
             </Button>

@@ -510,9 +510,9 @@ const IndexPage = () => {
       </Positions>
 
       <Positions title={'Our friends are looking too...'} hideImage={true}>
-        <Position title={'Manager, Smelting Digitalization (Espoo, Finland)'}>
+        <Position title={'Manager, Smelting Digitalization'}>
           <p>
-            We are looking for a digitalization enthusiast who wants to make an impact in the metals processing industry. More specifically we are looking for a person who wants to join our team in developing our digital offerings for smelting technologies and work with customers to help them achieve results. As part of the Smelting Digitalization team working towards a vision of a Fully Automated Smelter you would be improving safety, environment and productivity at smelters globally. The roadmap is in place and we are in execution mode to reach that vision so we need you to work not only with our product managers but also with our digital solutions team, that is this brilliant bunch:{' '}
+            We are looking for a digitalization enthusiast to Espoo, Finland, who wants to make an impact in the metals processing industry. More specifically we are looking for a person who wants to join our team in developing our digital offerings for smelting technologies and work with customers to help them achieve results. As part of the Smelting Digitalization team working towards a vision of a Fully Automated Smelter you would be improving safety, environment and productivity at smelters globally. The roadmap is in place and we are in execution mode to reach that vision so we need you to work not only with our product managers but also with our digital solutions team, that is this brilliant bunch:{' '}
             <a href="https://dev.outotec.com" target="_blank" rel="noopener noreferrer">
               dev.outotec.com
             </a>.

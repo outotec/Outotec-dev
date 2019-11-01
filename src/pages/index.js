@@ -315,97 +315,6 @@ const IndexPage = () => {
       </ImageTextSection>
 
       <Positions title={"We're looking for"}>
-        <Position title={"Lead Cloud Developer"}>
-          <p>
-            We are looking for new lead developer to join our customer portal development team at{' '}
-            <a 
-              href="https://goo.gl/maps/7NYQUQNNr9txc82j9" target="_blank" rel="noopener noreferrer"
-            >
-              Outotec HQ in Espoo, Finland
-            </a>
-            . The cloud-based portal will offer asset analytics, digital twins or virtual training environments, and access to information such as documents, spare part catalogs and service requests to our customers.
-          </p>
-          <p>
-            The customer portal is developed as part of Outotec’s Digital Solutions Platform – a
-            team of over thirty software professionals focused on solving real-world challenges to
-            improve safety, performance and sustainability of our customers’ operations. We use a
-            multitude of technologies such as machine vision, physics and chemistry-based
-            simulation, advanced process control and optimization, IoT and connectivity, analytics
-            and machine learning, and a web portal to enable development and delivery of Outotec’s
-            digital services.
-          </p>
-          <p>
-            <strong>What awaits you</strong>
-          </p>
-          <ul>
-            <li>
-              Lead role in architecture design and technology decisions regarding the customer
-              portal
-            </li>
-            <li>Close collaboration with the product owner and the multiple stakeholders</li>
-            <li>
-              Demanding software development tasks in the frontend, backend, API’s, access
-              management, component libraries, etc., using Azure services, Node.js, C#, TypeScript and React.js
-            </li>
-            <li>An architect role outside the portal team as a specialist in cloud technologies</li>
-          </ul>
-          <p>
-            <strong>We offer you</strong>
-          </p>
-          <ul>
-            <li>A diverse team full of skills and passion, ready to support you at every turn</li>
-            <li>
-              A global environment in a company that provides leading technologies and services for
-              the sustainable use of Earth’s natural resources
-            </li>
-            <li>
-              Agility within a large corporation – small enough to feel like home, large enough to
-              have impact
-            </li>
-            <li>A chance to contribute to our ways of working</li>
-            <li>
-              Opportunities and time to learn, grow and develop yourself with training, courses,
-              seminars, books and real project work
-            </li>
-            <li>
-              An environment where trying out new things and roles are encouraged
-            </li>
-            <li>Flexibility of work</li>
-          </ul>
-          <p>
-            <strong>We appreciate</strong>
-          </p>
-          <ul>
-            <li>
-              Work history with developing and architecting complex systems with cloud platforms and
-              web technologies, especially Azure, TypeScript, C# and React.js
-            </li>
-            <li>Experience in developing commercial products in the industrial sector</li>
-            <li>Real interest in solving challenges and taking pride in the products you build</li>
-            <li>Hands-on experience and experimentation in diverse technologies</li>
-            <li>
-              Skills and willingness to express your own opinions and to justify them, for
-              supporting decision making and developing the ways we work as a team
-            </li>
-            <li>
-              Learning and experimentation as a habit to develop and adapt to the changing
-              environment
-            </li>
-            <li>Activity in local developer or open source communities</li>
-          </ul>
-          <p>
-            We want to make the world a better place by enabling our customers to produce minerals
-            and metals as efficiently as possible while minimizing the environmental impact! Join us
-            in our quest!
-          </p>
-          <Buttons>
-            <Button
-              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/EEA68E6D9CA8EB8FC225849500488A8A" target="_blank" rel="noopener noreferrer"
-            >
-              Apply now!
-            </Button>
-          </Buttons>
-        </Position>
         <Position title={'.NET Developer'}>
           <p>
             We are looking for new talent to join our development team for{' '}
@@ -502,6 +411,97 @@ const IndexPage = () => {
           <Buttons>
             <Button
               href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/FFBFB414EB1651C5C2258378002D9C11" target="_blank" rel="noopener noreferrer"
+            >
+              Apply now!
+            </Button>
+          </Buttons>
+        </Position>
+        <Position title={"Lead Cloud Developer"}>
+          <p>
+            We are looking for new lead developer to join our customer portal development team at{' '}
+            <a 
+              href="https://goo.gl/maps/7NYQUQNNr9txc82j9" target="_blank" rel="noopener noreferrer"
+            >
+              Outotec HQ in Espoo, Finland
+            </a>
+            . The cloud-based portal will offer asset analytics, digital twins or virtual training environments, and access to information such as documents, spare part catalogs and service requests to our customers.
+          </p>
+          <p>
+            The customer portal is developed as part of Outotec’s Digital Solutions Platform – a
+            team of over thirty software professionals focused on solving real-world challenges to
+            improve safety, performance and sustainability of our customers’ operations. We use a
+            multitude of technologies such as machine vision, physics and chemistry-based
+            simulation, advanced process control and optimization, IoT and connectivity, analytics
+            and machine learning, and a web portal to enable development and delivery of Outotec’s
+            digital services.
+          </p>
+          <p>
+            <strong>What awaits you</strong>
+          </p>
+          <ul>
+            <li>
+              Lead role in architecture design and technology decisions regarding the customer
+              portal
+            </li>
+            <li>Close collaboration with the product owner and the multiple stakeholders</li>
+            <li>
+              Demanding software development tasks in the frontend, backend, API’s, access
+              management, component libraries, etc., using Azure services, Node.js, C#, TypeScript and React.js
+            </li>
+            <li>An architect role outside the portal team as a specialist in cloud technologies</li>
+          </ul>
+          <p>
+            <strong>We offer you</strong>
+          </p>
+          <ul>
+            <li>A diverse team full of skills and passion, ready to support you at every turn</li>
+            <li>
+              A global environment in a company that provides leading technologies and services for
+              the sustainable use of Earth’s natural resources
+            </li>
+            <li>
+              Agility within a large corporation – small enough to feel like home, large enough to
+              have impact
+            </li>
+            <li>A chance to contribute to our ways of working</li>
+            <li>
+              Opportunities and time to learn, grow and develop yourself with training, courses,
+              seminars, books and real project work
+            </li>
+            <li>
+              An environment where trying out new things and roles are encouraged
+            </li>
+            <li>Flexibility of work</li>
+          </ul>
+          <p>
+            <strong>We appreciate</strong>
+          </p>
+          <ul>
+            <li>
+              Work history with developing and architecting complex systems with cloud platforms and
+              web technologies, especially Azure, TypeScript, C# and React.js
+            </li>
+            <li>Experience in developing commercial products in the industrial sector</li>
+            <li>Real interest in solving challenges and taking pride in the products you build</li>
+            <li>Hands-on experience and experimentation in diverse technologies</li>
+            <li>
+              Skills and willingness to express your own opinions and to justify them, for
+              supporting decision making and developing the ways we work as a team
+            </li>
+            <li>
+              Learning and experimentation as a habit to develop and adapt to the changing
+              environment
+            </li>
+            <li>Activity in local developer or open source communities</li>
+          </ul>
+          <p>
+            We want to make the world a better place by enabling our customers to produce minerals
+            and metals as efficiently as possible while minimizing the environmental impact! Join us
+            in our quest!
+          </p>
+          <Buttons>
+            <Button
+              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/EEA68E6D9CA8EB8FC225849500488A8A" target="_blank" rel="noopener noreferrer"
             >
               Apply now!
             </Button>

@@ -408,10 +408,14 @@ const IndexPage = () => {
             and metals as efficiently as possible while minimizing the environmental impact! Join us
             in our quest!
           </p>
+
+          <p>
+            <br />
+            <strong>Sorry, the position has been closed!</strong>
+          </p>
+
           <Buttons>
-            <Button
-              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/FFBFB414EB1651C5C2258378002D9C11" target="_blank" rel="noopener noreferrer"
-            >
+            <Button style={{backgroundColor: "#e0e0e0", borderColor: "#e0e0e0", color: "#afafaf" }}>
               Apply now!
             </Button>
           </Buttons>
@@ -499,10 +503,14 @@ const IndexPage = () => {
             and metals as efficiently as possible while minimizing the environmental impact! Join us
             in our quest!
           </p>
+
+          <p>
+            <br />
+            <strong>Sorry, the position has been closed!</strong>
+          </p>
+
           <Buttons>
-            <Button
-              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/EEA68E6D9CA8EB8FC225849500488A8A" target="_blank" rel="noopener noreferrer"
-            >
+            <Button style={{backgroundColor: "#e0e0e0", borderColor: "#e0e0e0", color: "#afafaf" }}>
               Apply now!
             </Button>
           </Buttons>
@@ -576,10 +584,13 @@ const IndexPage = () => {
             <span>Best availability on Thursdays at 9 - 10 (EET)</span>
           </p>
 
+          <p>
+            <br />
+            <strong>Sorry, the position has been closed!</strong>
+          </p>
+
           <Buttons>
-            <Button
-              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/5C0BD48F411377CBC22584880042B14E" target="_blank" rel="noopener noreferrer"
-            >
+            <Button style={{backgroundColor: "#e0e0e0", borderColor: "#e0e0e0", color: "#afafaf" }}>
               Apply now!
             </Button>
           </Buttons>

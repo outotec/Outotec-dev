@@ -67,7 +67,7 @@ const IndexPage = () => {
           }
         }
       }
-      fire: file(relativePath: { eq: "fire.png" }) {
+      fire: file(relativePath: { eq: "fire.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.

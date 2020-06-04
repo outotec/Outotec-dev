@@ -314,7 +314,7 @@ const IndexPage = () => {
       </ImageTextSection>
 
       <Positions title={"We're looking for"}>
-        <Position title={"Desing system owner"}>
+        <Position title={"Design system owner"}>
           <p>
             We are looking for experienced design talent to become the owner of our new Outotec Design system (based at{' '}
             <a 

@@ -161,8 +161,7 @@ const IndexPage = () => {
             <strong>Latest tech</strong> and modern practices
           </li>
           <li>
-            <strong>Co-creation</strong> for identifying new ideas and refining them into concepts,
-            prototypes and solutions together with customers and users
+            <strong>Co-creation</strong> and service design for identifying new ideas and refining them into concepts, prototypes and solutions together with customers and users
           </li>
           <li>
             Opportunity to <strong>build the team</strong>, the culture, and ways of working
@@ -170,7 +169,7 @@ const IndexPage = () => {
           </li>
           <li>
             An environment where trying out new things and roles are encouraged - be it{' '}
-            <strong>experimenting</strong> with new technologies or taking on tasks in new projects
+            <strong>experimenting</strong> with new technologies or taking on new tasks
           </li>
         </ul>
       </ImageTextSection>
@@ -280,7 +279,7 @@ const IndexPage = () => {
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
         <h2>// Your team</h2>
         <p>
-          We are a software development team of over thirty software professionals, building digital solutions for Outotec customers around the globe. We create advanced sensors for our machines, automate and simulate our processes, connect them all to the cloud to enable analytics, machine learning and digital twin solutions.
+          We are a software development team of over thirty software professionals, including developers, designers, product owners and other specialists. Together with the businesses, we build digital solutions for Outotec customers around the globe. We create advanced sensors for our machines, automate and simulate our processes, connect them all to the cloud to enable analytics, machine learning and digital twin solutions.
         </p>
         <p>
           Bit by bit, we bring modern software and design practices to a relatively conservative
@@ -315,287 +314,93 @@ const IndexPage = () => {
       </ImageTextSection>
 
       <Positions title={"We're looking for"}>
-        <Position title={'.NET Developer'}>
+        <Position title={"Desing system owner"}>
           <p>
-            We are looking for new talent to join our development team for{' '}
-            <a href="http://www.outotec.com/HSC" target="_blank" rel="noopener noreferrer">
-              HSC Chemistry
-            </a>{' '}
-            at our{' '}
-            <a
-              href="https://goo.gl/maps/VrHRmTNDXJE7a5hH9" target="_blank" rel="noopener noreferrer"
-            >
-              Pori Research Center, Finland
-            </a>
-            . HSC is a unique Windows software package for modeling and simulation of chemical, metallurgical and mineral processing technologies. It is the basic tool to design processing plants and analyze their performance, costs and environmental footprint. The same powerful simulation engine may also be used to create digital twins to optimize process operation, make predictions and train operators.
-          </p>
-          <p>
-            Modeling and simulation is part of Outotec’s Digital Solutions Platform – a team of over
-            thirty software professionals focused on solving real-world challenges to improve
-            safety, performance and sustainability of our customers’ operations. We use a multitude
-            of different technologies such as machine vision, physics and chemistry-based
-            simulation, advanced process control and optimization, IoT and connectivity, analytics
-            and machine learning, and a web portal to deliver our digital services.
-          </p>
-          <p>
-            <strong>What awaits you</strong>
-          </p>
-          <ul>
-            <li>
-              Software development of the calculation modules and user interfaces in an agile
-              development team using .NET technology for Windows applications
-            </li>
-            <li>Designing and architecting solutions together with your team members</li>
-            <li>
-              Work on the engine that drives our future simulation-based digital solutions for
-              training, prediction and optimization
-            </li>
-            <li>
-              Working together with the users to build the best possible simulation tool for their
-              known and unknown needs
-            </li>
-          </ul>
-          <p>
-            <strong>We offer you</strong>
-          </p>
-          <ul>
-            <li>A diverse team full of skills and passion, ready to support you at every turn</li>
-            <li>
-              A global environment in a company that provides leading technologies and services for
-              the sustainable use of Earth’s natural resources
-            </li>
-            <li>
-              Agility within a large corporation – small enough to feel like home, large enough to
-              have impact
-            </li>
-            <li>A chance to contribute to our ways of working</li>
-            <li>
-              Opportunities and time to learn, grow and develop yourself with training, courses,
-              seminars, books and real project work
-            </li>
-            <li>
-              An environment where trying out new things and roles are encouraged
-            </li>
-            <li>Flexibility of work</li>
-          </ul>
-          <p>
-            <strong>We appreciate</strong>
-          </p>
-          <ul>
-            <li>
-              Work history in developing commercial Windows desktop applications, preferably with .NET technologies
-            </li>
-            <li>
-              Familiarity and experimentation with diverse technologies such as cloud platforms    and web technologies
-            </li>
-            <li>Real interest in solving challenges and taking pride in the products you build</li>
-            <li>
-              Skills and willingness to express your own opinions and to justify them, for
-              supporting decision making and developing the ways we work as a team
-            </li>
-            <li>
-              Learning and experimentation as a habit to develop and adapt to the changing
-              environment
-            </li>
-            <li>
-              Knowledge of chemistry, physics or mathematics is not required, but basic
-              understanding can help when implementing more advanced algorithms or when interacting
-              with technology advisors
-            </li>
-          </ul>
-          <p>
-            We want to make the world a better place by enabling our customers to produce minerals
-            and metals as efficiently as possible while minimizing the environmental impact! Join us
-            in our quest!
-          </p>
-
-          <p>
-            <br />
-            <strong>Sorry, the position has been closed!</strong>
-          </p>
-
-          <Buttons>
-            <Button style={{backgroundColor: "#e0e0e0", borderColor: "#e0e0e0", color: "#afafaf" }}>
-              Apply now!
-            </Button>
-          </Buttons>
-        </Position>
-        <Position title={"Lead Cloud Developer"}>
-          <p>
-            We are looking for new lead developer to join our customer portal development team at{' '}
+            We are looking for experienced design talent to become the owner of our new Outotec Design system (based at{' '}
             <a 
               href="https://goo.gl/maps/7NYQUQNNr9txc82j9" target="_blank" rel="noopener noreferrer"
             >
               Outotec HQ in Espoo, Finland
             </a>
-            . The cloud-based portal will offer asset analytics, digital twins or virtual training environments, and access to information such as documents, spare part catalogs and service requests to our customers.
+            ). 
+            We believe that a design system guarantees our users a consistent Outotec-branded experience across all our digital products and services. For development teams, the reusable components and patterns of the Sketch- and React-based libraries coupled with design principles and process inspire and accelerate the development to create even better digital solutions for our customers.
           </p>
           <p>
-            The customer portal is developed as part of Outotec’s Digital Solutions Platform – a
-            team of over thirty software professionals focused on solving real-world challenges to
-            improve safety, performance and sustainability of our customers’ operations. We use a
-            multitude of technologies such as machine vision, physics and chemistry-based
-            simulation, advanced process control and optimization, IoT and connectivity, analytics
-            and machine learning, and a web portal to enable development and delivery of Outotec’s
-            digital services.
+            As the versatile and inspiring owner of the Outotec Design system, you will take the Design system to the next level and beyond the minimum viable product. You will continue to build a company-wide system that can tackle even more challenging needs of our digital offering ranging from customer portal to asset analytics to digital twins or even venture to operator room user interfaces or equipment touch panels. 
           </p>
           <p>
-            <strong>What awaits you</strong>
+            The Design system is developed as a part of Outotec’s Digital Solutions Platform – a platform focused on solving real-world challenges to improve safety, performance and sustainability of our customers’ operations. 
+          </p>
+          <p>
+            <strong>As Design system owner, you will</strong>
           </p>
           <ul>
             <li>
-              Lead role in architecture design and technology decisions regarding the customer
-              portal
+              Develop and curate the Outotec Design system – design principles, libraries of patterns and user interface components, as well as templates and tools
             </li>
-            <li>Close collaboration with the product owner and the multiple stakeholders</li>
             <li>
-              Demanding software development tasks in the frontend, backend, API’s, access
-              management, component libraries, etc., using Azure services, Node.js, C#, TypeScript and React.js
+              Form a clear vision for the Design system that brings the most value for Outotec digital solutions
             </li>
-            <li>An architect role outside the portal team as a specialist in cloud technologies</li>
+            <li>
+              Represent and support the Design system users and discover their articulated as well as latent needs
+            </li>
+            <li>
+              Work closely with the Design system users, i.e. other agile development teams and their product owners
+            </li>
+            <li>
+              Create, refine and prioritize the development backlog using agile product development practices
+            </li>
+            <li>
+              Enable the small Design system team of designers and developers to successfully deliver value
+            </li>
+            <li>
+              Participate in the Outotec design community and contribute to hands-on design work as necessary
+            </li>
           </ul>
           <p>
-            <strong>We offer you</strong>
-          </p>
-          <ul>
-            <li>A diverse team full of skills and passion, ready to support you at every turn</li>
-            <li>
-              A global environment in a company that provides leading technologies and services for
-              the sustainable use of Earth’s natural resources
-            </li>
-            <li>
-              Agility within a large corporation – small enough to feel like home, large enough to
-              have impact
-            </li>
-            <li>A chance to contribute to our ways of working</li>
-            <li>
-              Opportunities and time to learn, grow and develop yourself with training, courses,
-              seminars, books and real project work
-            </li>
-            <li>
-              An environment where trying out new things and roles are encouraged
-            </li>
-            <li>Flexibility of work</li>
-          </ul>
-          <p>
-            <strong>We appreciate</strong>
+            <strong>To succeed, you will need</strong>
           </p>
           <ul>
             <li>
-              Work history with developing and architecting complex systems with cloud platforms and
-              web technologies, especially Azure, TypeScript, C# and React.js
-            </li>
-            <li>Experience in developing commercial products in the industrial sector</li>
-            <li>Real interest in solving challenges and taking pride in the products you build</li>
-            <li>Hands-on experience and experimentation in diverse technologies</li>
-            <li>
-              Skills and willingness to express your own opinions and to justify them, for
-              supporting decision making and developing the ways we work as a team
+              Solid hands-on experience in user interface and user experience design
             </li>
             <li>
-              Learning and experimentation as a habit to develop and adapt to the changing
-              environment
+              Work history in agile software product development as a designer or product owner
             </li>
-            <li>Activity in local developer or open source communities</li>
+            <li>
+              Good understanding of modern software development or even some basic skills of front-end development
+            </li>
+            <li>
+              Knowledge of what makes a user interface great; the beauty, the simplicity, the interaction, the code
+            </li>
+            <li>
+              Eye for aesthetics and visual user interface design
+            </li>
+            <li>
+              Good communication and people skills
+            </li>
+            <li>
+              Fluent English required, Finnish skills can be useful
+            </li>
           </ul>
           <p>
-            We want to make the world a better place by enabling our customers to produce minerals
-            and metals as efficiently as possible while minimizing the environmental impact! Join us
-            in our quest!
-          </p>
-
-          <p>
-            <br />
-            <strong>Sorry, the position has been closed!</strong>
+            We offer you exciting and cool work on digitalization projects in an industrial domain with a team full of skills and passion. You will work in a global environment and will have excellent possibilities to develop your personal and professional skills in a world’s leading company in minerals and metals processing technology.
           </p>
 
           <Buttons>
-            <Button style={{backgroundColor: "#e0e0e0", borderColor: "#e0e0e0", color: "#afafaf" }}>
+            <Button 
+              href="https://app.outotec.com/hr/applications.nsf/vwOpenJobs/0D23CA8F9268A1DAC225857D001C213F?OpenDocument" target="_blank" rel="noopener noreferrer"
+            >
               Apply now!
             </Button>
           </Buttons>
         </Position>
       </Positions>
 
+      {/*
       <Positions title={'Our friends are looking too...'} hideImage={true}>
-        <Position title={'Manager, Smelting Digitalization'}>
-          <p>
-            We are looking for a digitalization enthusiast to Espoo, Finland, who wants to make an impact in the metals processing industry. More specifically we are looking for a person who wants to join our team in developing our digital offerings for smelting technologies and work with customers to help them achieve results. As part of the Smelting Digitalization team working towards a vision of a Fully Automated Smelter you would be improving safety, environment and productivity at smelters globally. The roadmap is in place and we are in execution mode to reach that vision so we need you to work not only with our product managers but also with our digital solutions team, that is this brilliant bunch:{' '}
-            <a href="https://dev.outotec.com" target="_blank" rel="noopener noreferrer">
-              dev.outotec.com
-            </a>.
-          </p>
-          <p>
-            <strong>As Manager, Smelting Digitalization, you will:</strong>
-          </p>
-          <ul>
-            <li>
-              Plan, manage and monitor our Smelting Digitalization program together with our global team
-            </li>
-            <li>Develop initiatives and products based on customer needs</li>
-            <li>
-              Assist in refining the digitalization strategy for Smelting and lead multiple product development projects
-            </li>
-            <li>
-              Have an active sales &amp; marketing role for Digital Products, promoting early stage adoption of new technologies
-            </li>
-            <li>
-             Seek opportunities to advance work through customer collaboration to bring new products to market faster
-            </li>
-            <li>
-              Manage internal, customer and regulatory/design standard needs for Digitalization products
-            </li>
-          </ul>
-          <p>
-            <strong>To succeed, you will need:</strong>
-          </p>
-          <ul>
-            <li>
-              A M.Sc. degree in either Process Engineering or Automation with a deep interest in understanding or learning one or the other
-            </li>
-            <li>
-             Practical experience of metallurgical processes and/or plant automation and IT are considered a strength
-            </li>
-            <li>
-              Demonstrated solid understanding, development and commercialization of digital platform projects and system
-            </li>
-            <li>
-              Strong conceptual and strategic thinking at the program and portfolio level with attention to detail in tactical execution
-            </li>
-            <li>
-              Ability to convey technical details clearly to all levels and build customer rapport
-            </li>
-            <li>
-              Ability to self-manage and work as part of a team (local and virtual) and deliver multiple projects concurrently
-            </li>
-            <li>Excellent communication and presentation skills</li>
-            <li>Willingness for frequent, short term travel</li>
-          </ul>
-
-          <p>
-            <strong>For more information, please contact</strong>
-            <br />
-            <span>Mikael Jåfs</span>
-            <br />
-            <span>Director, Strategic Projects &amp; Innovations, Smelting</span>
-            <br />
-            <a href="tel:+358 50 359 9577">+358 50 359 9577</a>
-            <br />
-            <span>Best availability on Thursdays at 9 - 10 (EET)</span>
-          </p>
-
-          <p>
-            <br />
-            <strong>Sorry, the position has been closed!</strong>
-          </p>
-
-          <Buttons>
-            <Button style={{backgroundColor: "#e0e0e0", borderColor: "#e0e0e0", color: "#afafaf" }}>
-              Apply now!
-            </Button>
-          </Buttons>
-        </Position>
       </Positions>
+      */}
 
       <ContactForm imageData={imageData.contact.childImageSharp.fluid}>
         {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}

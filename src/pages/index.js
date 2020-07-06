@@ -415,7 +415,7 @@ const IndexPage = () => {
           <br />
           <a href="mailto:jussi.jarvinen@outotec.com">jussi.jarvinen@outotec.com</a>
           <br />
-          <a href="tel:+358 40 831 2769">+358 40 831 2769</a>
+          <a href="tel:+358 40 831 2762">+358 40 831 2762</a>
           <br />
         </p>
       </ContactForm>
